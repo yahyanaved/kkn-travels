@@ -14,7 +14,7 @@ export function Hero({ locale }: { locale: Locale }) {
 
       <div className="shell grid gap-x-12 gap-y-10 pt-8 pb-14 lg:grid-cols-[minmax(0,6fr)_minmax(0,7fr)] lg:pt-[1.9375rem] lg:pb-16">
         <div className="lg:pt-[0.8125rem]">
-          <h1 id="hero-title" className="headline max-w-[9.8em]">
+          <h1 id="hero-title" className="headline max-w-[9.8em] rtl:max-w-none">
             {t.hero.headline}
           </h1>
           <p className="lede mt-5 max-w-[32.5rem]">{t.hero.lede}</p>

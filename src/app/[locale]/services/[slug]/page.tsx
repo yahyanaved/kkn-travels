@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EnquiryBand } from "@/components/EnquiryBand";
+import { Facts } from "@/components/Facts";
 import { FaqSection } from "@/components/FaqSection";
 import { JsonLd } from "@/components/JsonLd";
 import { PhotoBand } from "@/components/PhotoBand";
@@ -16,9 +17,10 @@ import { pageMetadata, serviceJsonLd } from "@/lib/seo";
 
 /** The second photograph beside each service's own. */
 const companion: Record<ServiceSlug, DestinationId> = {
-  "uae-visa-services": "dubai-museum",
+  "uae-visa-services": "dubai-creek",
   "international-visa-assistance": "paris",
   "flight-tickets": "london",
+  "hotels-and-travel-insurance": "maldives",
   "document-attestation": "dubai",
   "typing-services": "dubai-creek",
   "holidays-and-umrah": "makkah",
@@ -26,12 +28,13 @@ const companion: Record<ServiceSlug, DestinationId> = {
 
 /** Which enquiry option each service page preselects (index into enquiry.needOptions). */
 const needIndex: Record<ServiceSlug, number> = {
-  "uae-visa-services": 0,
-  "international-visa-assistance": 3,
+  "international-visa-assistance": 0,
+  "uae-visa-services": 1,
   "flight-tickets": 4,
-  "document-attestation": 7,
-  "typing-services": 5,
-  "holidays-and-umrah": 6,
+  "hotels-and-travel-insurance": 5,
+  "typing-services": 6,
+  "holidays-and-umrah": 7,
+  "document-attestation": 8,
 };
 
 export function generateStaticParams() {
@@ -104,13 +107,26 @@ export default async function ServicePage({ params }: PageProps<"/[locale]/servi
 
       <section className="band-paper section" aria-labelledby="items-title">
         <div className="shell">
+          {service.highlights ? (
+            <div className="mb-20">
+              <h2 className="section-title mb-10">{service.highlightsHeading}</h2>
+              <Facts items={service.highlights} />
+            </div>
+          ) : null}
           <h2 id="items-title" className="section-title mb-10">
             {service.itemsHeading}
           </h2>
           <dl className="rows">
             {service.items.map((item) => (
-              <div key={item.name} className="grid gap-x-[8%] gap-y-2 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
-                <dt className="subhead">{item.name}</dt>
+              <div
+                key={item.name}
+                id={item.id}
+                className="grid scroll-mt-28 gap-x-[8%] gap-y-2 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]"
+              >
+                <dt className="subhead">
+                  {item.name}
+                  {item.tag ? <span className="tag">{item.tag}</span> : null}
+                </dt>
                 <dd className="prose-measure text-ink-soft">{item.detail}</dd>
               </div>
             ))}

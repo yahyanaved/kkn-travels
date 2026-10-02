@@ -35,7 +35,7 @@ Visa applications, passports, Emirates ID, airline tickets and boarding passes, 
 
 ## Capabilities and Constraints
 
-- Main work: visa processing and airline ticketing.
+- Main work, and the site's lead message (owner, 2026-10-02): visa services for all top countries (Schengen, UK, USA, Canada, Australia and more), with early appointments, quick processing, and hotel, flight and insurance bookings; plus UAE-specific visas (Dubai visit visa, Dubai family visa "now available", visit visa for Pakistani nationals). Airline ticketing follows.
 - Also offered: typing, holiday packages, Umrah, hotels, travel insurance.
 - Paused by the owner (2026-10-02): document attestation and translation. The copy is kept but hidden from the site.
 - Not offered (not selected by the owner): company formation and trade licensing.

@@ -1,6 +1,6 @@
 # KKN Travels
 
-Marketing website for KKN Travels, a travel and documents desk in Dubai: UAE visas, visas for travel abroad, airline tickets, typing, holidays and Umrah. English and Arabic (right-to-left).
+Marketing website for KKN Travels, a visa and travel desk in Dubai. Visas lead: Schengen, UK, USA, Canada, Australia and other countries, plus Dubai visit and family visas. Flights, hotel bookings, travel insurance, typing, holidays and Umrah sit alongside. English and Arabic (right-to-left).
 
 Built with Next.js 16 (App Router), TypeScript and Tailwind CSS v4. Every page is statically generated.
 
@@ -24,7 +24,8 @@ npm run lint    # eslint
 2. **Set the environment variables** (see `.env.example`):
    - `NEXT_PUBLIC_SITE_URL`: the real domain, for example `https://www.kkntravels.com`.
    - `NEXT_PUBLIC_ALLOW_INDEXING=true`: until this is set the site tells search engines not to index it, so the dummy details never reach search results.
-3. **Review the copy** in `src/content`. It makes a few promises about how the office works (a written price before payment, government fees shown separately, English and Arabic spoken). Keep only what is true.
+3. **Review the visa copy**: the list of countries, "early appointments", "quick processing", "Dubai family visa now available" and the visit visa for Pakistani nationals are stated as the owner asked. Edit the country list in `services.visas.en.ts` (and the Arabic file) to match what the desk really handles; change the top announcement in `announce` in `en.ts` and `ar.ts`.
+3. **Review the rest of the copy** in `src/content`. It makes a few promises about how the office works (a written price before payment, government fees shown separately, English and Arabic spoken). Keep only what is true.
 4. **Have a native speaker review the Arabic** in `src/content/ar.ts` and `src/content/services.ar.ts`.
 5. **Replace the Makkah photograph** (`public/images/destinations/makkah.jpg`) with a licensed photograph before the site goes public. It is a generated depiction of the Grand Mosque and the Kaaba, which is not acceptable to publish for this audience.
 6. **Other photographs** in `public/images/destinations` are generated placeholders too. Replace any of them with owned or licensed photography by swapping the file and keeping the name.
@@ -35,7 +36,8 @@ npm run lint    # eslint
 | --- | --- |
 | `src/config/site.ts` | Business details and the WhatsApp link builder |
 | `src/content/en.ts`, `ar.ts` | Page copy for each language |
-| `src/content/services.en.ts`, `services.ar.ts` | The service pages |
+| `src/content/services.visas.en.ts`, `services.visas.ar.ts` | The visa services (countries, Dubai visas) and the hotel and insurance service |
+| `src/content/services.en.ts`, `services.ar.ts` | The other service pages |
 | `src/content/destinations.ts` | Destination photographs and which service each links to |
 | `src/app/[locale]` | Pages: home, services, service detail, about, contact, privacy, 404 |
 | `src/components` | Header, photo strip, service index, enquiry form and the rest |

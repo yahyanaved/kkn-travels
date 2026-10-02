@@ -12,7 +12,9 @@ export const getDictionary = (locale: Locale): Dictionary => dictionaries[locale
 
 /** The services on offer, in display order. Hidden services are left out. */
 export const getServices = (locale: Locale): Service[] =>
-  services[locale].filter((service) => !hiddenServices.includes(service.slug));
+  serviceSlugs
+    .filter((slug) => !hiddenServices.includes(slug))
+    .flatMap((slug) => services[locale].filter((service) => service.slug === slug));
 
 export const getService = (locale: Locale, slug: string): Service | undefined =>
   getServices(locale).find((service) => service.slug === slug);

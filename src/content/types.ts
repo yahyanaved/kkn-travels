@@ -1,7 +1,9 @@
+/** Every service, in the order it is shown. Visas lead. */
 export const serviceSlugs = [
-  "uae-visa-services",
   "international-visa-assistance",
+  "uae-visa-services",
   "flight-tickets",
+  "hotels-and-travel-insurance",
   "document-attestation",
   "typing-services",
   "holidays-and-umrah",
@@ -26,6 +28,9 @@ export const destinationIds = [
   "dubai-museum",
   "dubai-creek",
   "santorini",
+  "new-york",
+  "toronto",
+  "sydney",
 ] as const;
 
 export type DestinationId = (typeof destinationIds)[number];
@@ -51,8 +56,12 @@ export type Service = {
   /** Who usually asks for this. */
   whoFor: string;
   intro: string[];
+  /** Optional short facts shown before the list, for example what every application includes. */
+  highlightsHeading?: string;
+  highlights?: { title: string; detail: string }[];
   itemsHeading: string;
-  items: { name: string; detail: string }[];
+  /** `id` makes the item linkable (#id); `tag` is a short status shown beside the name. */
+  items: { name: string; detail: string; id?: string; tag?: string }[];
   bringHeading: string;
   bring: string[];
   bringNote: string;
@@ -90,6 +99,7 @@ export type Dictionary = {
     switchTo: string;
     primary: string;
   };
+  announce: { text: string; cta: string };
   hero: {
     headline: string;
     lede: string;
@@ -119,6 +129,12 @@ export type Dictionary = {
   home: {
     servicesHeading: string;
     servicesIntro: string;
+    visasHeading: string;
+    visasIntro: string;
+    visasCta: string;
+    uaeHeading: string;
+    uaeIntro: string;
+    uaeCta: string;
     bringHeading: string;
     bringIntro: string;
     bringCta: string;

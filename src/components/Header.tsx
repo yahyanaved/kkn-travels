@@ -7,8 +7,8 @@ import { MobileMenu } from "./MobileMenu";
 
 /** The services named in the navigation row, in order. Hidden services drop out on their own. */
 const navSlugs: ServiceSlug[] = [
-  "uae-visa-services",
   "international-visa-assistance",
+  "uae-visa-services",
   "flight-tickets",
   "document-attestation",
   "typing-services",

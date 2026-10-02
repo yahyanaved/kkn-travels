@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
+import { Announcement } from "@/components/Announcement";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
@@ -48,6 +49,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
         >
           {t.nav.skip}
         </a>
+        <Announcement locale={locale} />
         <Header locale={locale} />
         <main id="main" className="flex-1">
           {children}

@@ -8,6 +8,7 @@ import { FaqSection } from "@/components/FaqSection";
 import { Hero } from "@/components/Hero";
 import { PhotoBand } from "@/components/PhotoBand";
 import { Steps } from "@/components/Steps";
+import { VisaShowcase } from "@/components/VisaShowcase";
 import { getDictionary, getServices, servicePath } from "@/content";
 import { destinations } from "@/content/destinations";
 import { hasLocale, localePath } from "@/i18n/config";
@@ -39,6 +40,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     <>
       <Hero locale={locale} />
 
+      <VisaShowcase locale={locale} />
+
       <section className="band-paper section" aria-labelledby="bring-title">
         <div className="shell">
           <h2 id="bring-title" className="section-title">
@@ -58,7 +61,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           <Steps steps={t.home.steps} />
           <PhotoBand
             locale={locale}
-            ids={["london", "dubai-museum", "dubai-creek"]}
+            ids={["london", "istanbul", "maldives"]}
             framed={false}
             className="mt-16 lg:mt-20"
           />

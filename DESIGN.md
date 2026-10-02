@@ -303,6 +303,17 @@ Five photographs share one full-width row; one of them leads.
 - Subjects are famous travel destinations. No aircraft or aeroplanes.
 - The current files are generated placeholders. The Makkah photograph must be replaced with a licensed one before launch.
 
+### Visa sections (added 2026-10-02)
+
+Visas lead the site at the owner's request, so the home page carries two sections directly under the hero.
+
+- **Country grid:** the countries handled for travel abroad as names on hairlines, three across (two on tablets and phones), each linking to its entry on the visas page. On phones the one-line detail is hidden and only the names show.
+- **Facts:** four short titled facts side by side on hairlines (early appointments, quick processing, flight and hotel bookings, travel insurance). It is the steps grid without numerals, because the items are not a sequence.
+- **Row links:** the Dubai and UAE visas as full-width rows on hairlines, each a link with a chevron.
+- **Tag:** a short status beside a name ("Now available"), set small in burgundy at weight 600. It is inline text, not a badge: no background, no outline.
+- **Announcement line:** one sentence of news in a charcoal-ink bar above the navigation band, white type, centred, with one underlined link. It scrolls away; the navigation band stays.
+- **Strip:** the home strip now shows the visa countries asked for most (Dubai, USA, Europe, Canada, Australia), named by country, each linking to that country's entry.
+
 ### Service index
 Every service as a title on a hairline.
 - **Row:** the service name (index title) over a one-line description in soft charcoal, with a burgundy chevron at the inline-end. 25px above, 39px below. Rows are divided by hairlines; in two columns the top row has none.

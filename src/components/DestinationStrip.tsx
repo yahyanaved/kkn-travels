@@ -22,7 +22,10 @@ export function DestinationStrip({ locale }: { locale: Locale }) {
         const lead = id === LEAD;
         return (
           <li key={id} className="strip-slice" data-lead={lead} style={{ "--i": index } as React.CSSProperties}>
-            <Link href={localePath(locale, servicePath(destination.slug))} className="strip-link">
+            <Link
+              href={`${localePath(locale, servicePath(destination.slug))}${destination.anchor ? `#${destination.anchor}` : ""}`}
+              className="strip-link"
+            >
               <Image
                 src={destination.src}
                 alt={copy.alt}

@@ -11,6 +11,8 @@ export type Destination = {
   height: number;
   /** The service this destination links to. */
   slug: ServiceSlug;
+  /** Optional anchor on that service's page, for example the country's entry. */
+  anchor?: string;
   /** Optional tighter framing for the home page strip: a zoom and the point it grows from. */
   frame?: { scale: number; origin: string };
 };
@@ -23,11 +25,18 @@ export const destinations: Record<DestinationId, Destination> = {
     width: 2336,
     height: 1744,
     slug: "international-visa-assistance",
+    anchor: "schengen",
     frame: { scale: 1.167, origin: "50% 24%" },
   },
   maldives: { src: "/images/destinations/maldives.jpg", width: 1792, height: 2240, slug: "holidays-and-umrah" },
   makkah: { src: "/images/destinations/makkah.jpg", width: 1792, height: 2240, slug: "holidays-and-umrah" },
-  london: { src: "/images/destinations/london.jpg", width: 2336, height: 1744, slug: "international-visa-assistance" },
+  london: {
+    src: "/images/destinations/london.jpg",
+    width: 2336,
+    height: 1744,
+    slug: "international-visa-assistance",
+    anchor: "uk",
+  },
   "dubai-museum": { src: "/images/destinations/dubai-museum.jpg", width: 2336, height: 1744, slug: "typing-services" },
   "dubai-creek": { src: "/images/destinations/dubai-creek.jpg", width: 2336, height: 1744, slug: "typing-services" },
   santorini: {
@@ -35,17 +44,40 @@ export const destinations: Record<DestinationId, Destination> = {
     width: 1792,
     height: 2240,
     slug: "international-visa-assistance",
+    anchor: "schengen",
+  },
+  "new-york": {
+    src: "/images/destinations/new-york.jpg",
+    width: 1792,
+    height: 2240,
+    slug: "international-visa-assistance",
+    anchor: "usa",
+  },
+  toronto: {
+    src: "/images/destinations/toronto.jpg",
+    width: 1792,
+    height: 2240,
+    slug: "international-visa-assistance",
+    anchor: "canada",
+  },
+  sydney: {
+    src: "/images/destinations/sydney.jpg",
+    width: 1792,
+    height: 2240,
+    slug: "international-visa-assistance",
+    anchor: "australia",
   },
 };
 
-/** The five photographs in the home page strip, in order. The middle one is the wide lead. */
-export const stripOrder: DestinationId[] = ["dubai", "istanbul", "paris", "maldives", "makkah"];
+/** The five photographs in the home page strip, in order: the visas asked for most. The middle one is the wide lead. */
+export const stripOrder: DestinationId[] = ["dubai", "new-york", "paris", "toronto", "sydney"];
 
 /** The photograph shown at the top of each service page. */
 export const serviceDestination: Record<ServiceSlug, DestinationId> = {
   "uae-visa-services": "dubai",
   "international-visa-assistance": "london",
   "flight-tickets": "istanbul",
+  "hotels-and-travel-insurance": "santorini",
   "document-attestation": "dubai-creek",
   "typing-services": "dubai-museum",
   "holidays-and-umrah": "maldives",
