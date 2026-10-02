@@ -1,0 +1,334 @@
+{
+ "regions": [
+  {
+   "id": "nav-bar",
+   "kind": "chrome",
+   "box": {
+    "x": 0,
+    "y": 0,
+    "w": 1,
+    "h": 0.08487
+   },
+   "note": "white navigation bar band across the full width above the destination strip"
+  },
+  {
+   "id": "wordmark",
+   "kind": "text",
+   "box": {
+    "x": 0.03051,
+    "y": 0.02566,
+    "w": 0.12872,
+    "h": 0.03684
+   },
+   "note": "wordmark KKN Travels in burgundy medium grotesque sans on the white navigation bar"
+  },
+  {
+   "id": "nav-links",
+   "kind": "text",
+   "box": {
+    "x": 0.33705,
+    "y": 0.03289,
+    "w": 0.30432,
+    "h": 0.02237
+   },
+   "note": "five navigation links Visas Flights Attestation Typing Holidays in small charcoal sans"
+  },
+  {
+   "id": "nav-lang",
+   "kind": "text",
+   "box": {
+    "x": 0.83073,
+    "y": 0.03289,
+    "w": 0.0279,
+    "h": 0.02171
+   },
+   "note": "language switch link in Arabic script"
+  },
+  {
+   "id": "nav-whatsapp",
+   "kind": "control",
+   "box": {
+    "x": 0.87984,
+    "y": 0.01842,
+    "w": 0.09673,
+    "h": 0.04868
+   },
+   "note": "solid burgundy pill button with white text WhatsApp us"
+  },
+  {
+   "id": "photo-dubai",
+   "kind": "plate",
+   "box": {
+    "x": 0,
+    "y": 0.08487,
+    "w": 0.17113,
+    "h": 0.38684
+   },
+   "note": "photograph of the Burj Khalifa and Dubai skyline at dusk with a pink and violet sky",
+   "bleed": true,
+   "plate": "public/images/destinations/dubai.jpg"
+  },
+  {
+   "id": "photo-istanbul",
+   "kind": "plate",
+   "box": {
+    "x": 0.17671,
+    "y": 0.08487,
+    "w": 0.17485,
+    "h": 0.38684
+   },
+   "note": "photograph of the Blue Mosque in Istanbul at dusk with lit domes and minarets",
+   "bleed": true,
+   "plate": "public/images/destinations/istanbul.jpg"
+  },
+  {
+   "id": "photo-paris",
+   "kind": "plate",
+   "box": {
+    "x": 0.35751,
+    "y": 0.08487,
+    "w": 0.28497,
+    "h": 0.38684
+   },
+   "note": "photograph of the Eiffel Tower in Paris at sunset above gardens, the wide centre photograph",
+   "bleed": true,
+   "plate": "public/images/destinations/paris.jpg"
+  },
+  {
+   "id": "photo-maldives",
+   "kind": "plate",
+   "box": {
+    "x": 0.64844,
+    "y": 0.08487,
+    "w": 0.17485,
+    "h": 0.38684
+   },
+   "note": "aerial photograph of a Maldives lagoon with a curving line of overwater villas on turquoise water",
+   "bleed": true,
+   "plate": "public/images/destinations/maldives.jpg"
+  },
+  {
+   "id": "photo-makkah",
+   "kind": "plate",
+   "box": {
+    "x": 0.82887,
+    "y": 0.08487,
+    "w": 0.17113,
+    "h": 0.38684
+   },
+   "note": "photograph of the Clock Tower and the Grand Mosque in Makkah at night",
+   "bleed": true,
+   "plate": "public/images/destinations/makkah.jpg"
+  },
+  {
+   "id": "label-dubai",
+   "kind": "text",
+   "box": {
+    "x": 0.01039,
+    "y": 0.43617,
+    "w": 0.0354,
+    "h": 0.01642
+   },
+   "note": "white place-name caption reading Dubai in small medium-weight sans type"
+  },
+  {
+   "id": "label-istanbul",
+   "kind": "text",
+   "box": {
+    "x": 0.18748,
+    "y": 0.43617,
+    "w": 0.04949,
+    "h": 0.01642
+   },
+   "note": "white place-name caption reading Istanbul in small medium-weight sans type"
+  },
+  {
+   "id": "label-paris",
+   "kind": "text",
+   "box": {
+    "x": 0.36796,
+    "y": 0.43617,
+    "w": 0.03047,
+    "h": 0.01642
+   },
+   "note": "white place-name caption reading Paris in small medium-weight sans type"
+  },
+  {
+   "id": "label-maldives",
+   "kind": "text",
+   "box": {
+    "x": 0.65886,
+    "y": 0.43617,
+    "w": 0.05248,
+    "h": 0.01642
+   },
+   "note": "white place-name caption reading Maldives in small medium-weight sans type"
+  },
+  {
+   "id": "label-makkah",
+   "kind": "text",
+   "box": {
+    "x": 0.83928,
+    "y": 0.43617,
+    "w": 0.04686,
+    "h": 0.01642
+   },
+   "note": "white place-name caption reading Makkah in small medium-weight sans type"
+  },
+  {
+   "id": "headline",
+   "kind": "text",
+   "box": {
+    "x": 0.03571,
+    "y": 0.53882,
+    "w": 0.31882,
+    "h": 0.18553
+   },
+   "note": "three-line headline Visas and flights, sorted at one desk in Dubai. in charcoal medium grotesque sans"
+  },
+  {
+   "id": "lede",
+   "kind": "text",
+   "box": {
+    "x": 0.03571,
+    "y": 0.76184,
+    "w": 0.37426,
+    "h": 0.05987
+   },
+   "note": "two-line paragraph in small charcoal sans describing the services"
+  },
+  {
+   "id": "cta-start",
+   "kind": "control",
+   "box": {
+    "x": 0.03609,
+    "y": 0.85724,
+    "w": 0.15439,
+    "h": 0.07105
+   },
+   "note": "solid burgundy pill button with white text Start on WhatsApp"
+  },
+  {
+   "id": "cta-call",
+   "kind": "text",
+   "box": {
+    "x": 0.21801,
+    "y": 0.88158,
+    "w": 0.11347,
+    "h": 0.02961
+   },
+   "note": "text link Call +971 4 000 0000 with a thin underline"
+  },
+  {
+   "id": "svc-visas",
+   "kind": "control",
+   "box": {
+    "x": 0.52976,
+    "y": 0.54605,
+    "w": 0.20089,
+    "h": 0.06382
+   },
+   "note": "service index link: title Visas with one line of small grey text and a small burgundy chevron at the right"
+  },
+  {
+   "id": "svc-visas-abroad",
+   "kind": "control",
+   "box": {
+    "x": 0.76525,
+    "y": 0.54605,
+    "w": 0.20089,
+    "h": 0.06382
+   },
+   "note": "service index link: title Visas abroad with one line of small grey text and a small burgundy chevron at the right"
+  },
+  {
+   "id": "svc-flights",
+   "kind": "control",
+   "box": {
+    "x": 0.52976,
+    "y": 0.69145,
+    "w": 0.20089,
+    "h": 0.0625
+   },
+   "note": "service index link: title Flights with one line of small grey text and a small burgundy chevron at the right"
+  },
+  {
+   "id": "svc-attestation",
+   "kind": "control",
+   "box": {
+    "x": 0.76525,
+    "y": 0.69145,
+    "w": 0.20089,
+    "h": 0.0625
+   },
+   "note": "service index link: title Attestation with one line of small grey text and a small burgundy chevron at the right"
+  },
+  {
+   "id": "svc-typing",
+   "kind": "control",
+   "box": {
+    "x": 0.52976,
+    "y": 0.83289,
+    "w": 0.20089,
+    "h": 0.06579
+   },
+   "note": "service index link: title Typing with one line of small grey text and a small burgundy chevron at the right"
+  },
+  {
+   "id": "svc-holidays",
+   "kind": "control",
+   "box": {
+    "x": 0.76525,
+    "y": 0.83289,
+    "w": 0.20089,
+    "h": 0.06579
+   },
+   "note": "service index link: title Holidays and Umrah with one line of small grey text and a small burgundy chevron at the right"
+  },
+  {
+   "id": "rule-a1",
+   "kind": "chrome",
+   "box": {
+    "x": 0.53051,
+    "y": 0.65263,
+    "w": 0.1994,
+    "h": 0.00461
+   },
+   "note": "thin grey hairline rule separating service index rows"
+  },
+  {
+   "id": "rule-a2",
+   "kind": "chrome",
+   "box": {
+    "x": 0.766,
+    "y": 0.65263,
+    "w": 0.1994,
+    "h": 0.00461
+   },
+   "note": "thin grey hairline rule separating service index rows"
+  },
+  {
+   "id": "rule-b1",
+   "kind": "chrome",
+   "box": {
+    "x": 0.53051,
+    "y": 0.79737,
+    "w": 0.1994,
+    "h": 0.00461
+   },
+   "note": "thin grey hairline rule separating service index rows"
+  },
+  {
+   "id": "rule-b2",
+   "kind": "chrome",
+   "box": {
+    "x": 0.766,
+    "y": 0.79737,
+    "w": 0.1994,
+    "h": 0.00461
+   },
+   "note": "thin grey hairline rule separating service index rows"
+  }
+ ],
+ "allowUncovered": true
+}

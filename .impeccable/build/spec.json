@@ -1,0 +1,1682 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-10-02T11:32:06.503Z",
+  "comp": ".impeccable/mocks/panorama.png",
+  "warnings": [
+    "region photo-dubai: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region photo-istanbul: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region photo-paris: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region photo-maldives: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region photo-makkah: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)"
+  ],
+  "uncoveredInkCells": [
+    "H5",
+    "A7",
+    "B7",
+    "C7",
+    "D7",
+    "H7",
+    "A8",
+    "B8",
+    "C8",
+    "D8",
+    "H8",
+    "B9"
+  ],
+  "compSize": {
+    "width": 2688,
+    "height": 1520
+  },
+  "aspect": 1.7684,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#ebeaea",
+      "coverage": 0.8014
+    },
+    {
+      "hex": "#c7b3be",
+      "coverage": 0.0532
+    },
+    {
+      "hex": "#151a19",
+      "coverage": 0.0507
+    },
+    {
+      "hex": "#191a2a",
+      "coverage": 0.0489
+    },
+    {
+      "hex": "#6e739f",
+      "coverage": 0.0458
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.0278,
+      "strength": 0.3176
+    },
+    {
+      "y": 0.0556,
+      "strength": 0.3274
+    },
+    {
+      "y": 0.0833,
+      "strength": 1
+    },
+    {
+      "y": 0.4722,
+      "strength": 1
+    },
+    {
+      "y": 0.5556,
+      "strength": 0.469
+    },
+    {
+      "y": 0.5833,
+      "strength": 0.2091
+    },
+    {
+      "y": 0.625,
+      "strength": 0.3536
+    },
+    {
+      "y": 0.6528,
+      "strength": 0.3527
+    },
+    {
+      "y": 0.7222,
+      "strength": 0.2921
+    },
+    {
+      "y": 0.7639,
+      "strength": 0.2136
+    },
+    {
+      "y": 0.9306,
+      "strength": 0.2565
+    }
+  ],
+  "regions": [
+    {
+      "id": "nav-bar",
+      "kind": "chrome",
+      "note": "white navigation bar band across the full width above the destination strip",
+      "grid": null,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.0849
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 2688,
+        "h": 129
+      },
+      "aspect": 20.8372,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.9345
+        },
+        {
+          "hex": "#640b2b",
+          "coverage": 0.0571
+        },
+        {
+          "hex": "#1f1f2f",
+          "coverage": 0.0051
+        },
+        {
+          "hex": "#d8b8c8",
+          "coverage": 0.002
+        },
+        {
+          "hex": "#182828",
+          "coverage": 0.0013
+        }
+      ],
+      "detail": {
+        "energy": 29.9099
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "wordmark",
+      "kind": "text",
+      "note": "wordmark KKN Travels in burgundy medium grotesque sans on the white navigation bar",
+      "grid": null,
+      "box": {
+        "x": 0.0305,
+        "y": 0.0257,
+        "w": 0.1287,
+        "h": 0.0368
+      },
+      "px": {
+        "x": 82,
+        "y": 39,
+        "w": 346,
+        "h": 56
+      },
+      "aspect": 6.1786,
+      "palette": [
+        {
+          "hex": "#f8f7f8",
+          "coverage": 0.6594
+        },
+        {
+          "hex": "#600d2d",
+          "coverage": 0.2708
+        },
+        {
+          "hex": "#85425d",
+          "coverage": 0.0306
+        },
+        {
+          "hex": "#cfb1bd",
+          "coverage": 0.0219
+        },
+        {
+          "hex": "#b4839b",
+          "coverage": 0.0174
+        }
+      ],
+      "detail": {
+        "energy": 72.6357
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 8,
+          "capHeightPx": 47,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.8085,
+          "advTall": 0.8085,
+          "advX": 1.0213,
+          "gap": 0.0638,
+          "xRatio": 0.7234,
+          "stemW": 0.1674,
+          "contrast": 1.0782,
+          "serif": 0.9971,
+          "densTall": 0.5136,
+          "densX": 0.5409,
+          "weight": 0.5136
+        },
+        "widthClass": "wide",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "nav-links",
+      "kind": "text",
+      "note": "five navigation links Visas Flights Attestation Typing Holidays in small charcoal sans",
+      "grid": null,
+      "box": {
+        "x": 0.3371,
+        "y": 0.0329,
+        "w": 0.3043,
+        "h": 0.0224
+      },
+      "px": {
+        "x": 906,
+        "y": 50,
+        "w": 818,
+        "h": 34
+      },
+      "aspect": 24.0588,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.8704
+        },
+        {
+          "hex": "#212333",
+          "coverage": 0.0538
+        },
+        {
+          "hex": "#1f2c2c",
+          "coverage": 0.0317
+        },
+        {
+          "hex": "#7e8386",
+          "coverage": 0.0264
+        },
+        {
+          "hex": "#52535e",
+          "coverage": 0.0177
+        }
+      ],
+      "detail": {
+        "energy": 64.1467
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 37,
+          "capHeightPx": 18.7,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.6403,
+          "advTall": 0.5069,
+          "advX": 0.6937,
+          "gap": 0.1334,
+          "xRatio": 0.7326,
+          "stemW": 0.1902,
+          "contrast": 1.1698,
+          "serif": 0.7357,
+          "densTall": 0.5153,
+          "densX": 0.6371,
+          "weight": 0.5153
+        },
+        "widthClass": "normal",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "nav-lang",
+      "kind": "text",
+      "note": "language switch link in Arabic script",
+      "grid": null,
+      "box": {
+        "x": 0.8307,
+        "y": 0.0329,
+        "w": 0.0279,
+        "h": 0.0217
+      },
+      "px": {
+        "x": 2233,
+        "y": 50,
+        "w": 75,
+        "h": 33
+      },
+      "aspect": 2.2727,
+      "palette": [
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.8113
+        },
+        {
+          "hex": "#151727",
+          "coverage": 0.0868
+        },
+        {
+          "hex": "#152222",
+          "coverage": 0.0528
+        },
+        {
+          "hex": "#c6c8cd",
+          "coverage": 0.0264
+        },
+        {
+          "hex": "#909598",
+          "coverage": 0.0226
+        }
+      ],
+      "detail": {
+        "energy": 21.9577
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 6,
+          "capHeightPx": 3.6,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 1.9348,
+          "advTall": 1.9348,
+          "advX": 1.9348,
+          "gap": 0.4465,
+          "xRatio": 0.7054,
+          "stemW": 0.4461,
+          "contrast": 1.6574,
+          "serif": null,
+          "densTall": 0.7239,
+          "densX": 0.7397,
+          "weight": 0.7239
+        },
+        "widthClass": "wide",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "nav-whatsapp",
+      "kind": "control",
+      "note": "solid burgundy pill button with white text WhatsApp us",
+      "grid": null,
+      "box": {
+        "x": 0.8798,
+        "y": 0.0184,
+        "w": 0.0967,
+        "h": 0.0487
+      },
+      "px": {
+        "x": 2365,
+        "y": 28,
+        "w": 260,
+        "h": 74
+      },
+      "aspect": 3.5135,
+      "palette": [
+        {
+          "hex": "#640929",
+          "coverage": 0.7582
+        },
+        {
+          "hex": "#f8f8f8",
+          "coverage": 0.1943
+        },
+        {
+          "hex": "#dec1cd",
+          "coverage": 0.0242
+        },
+        {
+          "hex": "#79314d",
+          "coverage": 0.014
+        },
+        {
+          "hex": "#ba869a",
+          "coverage": 0.0093
+        }
+      ],
+      "detail": {
+        "energy": 37.1987
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "photo-dubai",
+      "kind": "plate",
+      "note": "photograph of the Burj Khalifa and Dubai skyline at dusk with a pink and violet sky",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0,
+        "y": 0.0849,
+        "w": 0.1711,
+        "h": 0.3868
+      },
+      "px": {
+        "x": 0,
+        "y": 129,
+        "w": 460,
+        "h": 588
+      },
+      "aspect": 0.7823,
+      "palette": [
+        {
+          "hex": "#696b9a",
+          "coverage": 0.2907
+        },
+        {
+          "hex": "#302a32",
+          "coverage": 0.2617
+        },
+        {
+          "hex": "#8e7fa0",
+          "coverage": 0.2166
+        },
+        {
+          "hex": "#efae91",
+          "coverage": 0.1211
+        },
+        {
+          "hex": "#b690a3",
+          "coverage": 0.1098
+        }
+      ],
+      "detail": {
+        "energy": 22.3777
+      },
+      "medium": "raster",
+      "plate": "public/images/destinations/dubai.jpg",
+      "text": null
+    },
+    {
+      "id": "photo-istanbul",
+      "kind": "plate",
+      "note": "photograph of the Blue Mosque in Istanbul at dusk with lit domes and minarets",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0.1767,
+        "y": 0.0849,
+        "w": 0.1749,
+        "h": 0.3868
+      },
+      "px": {
+        "x": 475,
+        "y": 129,
+        "w": 470,
+        "h": 588
+      },
+      "aspect": 0.7993,
+      "palette": [
+        {
+          "hex": "#131210",
+          "coverage": 0.2506
+        },
+        {
+          "hex": "#afafc6",
+          "coverage": 0.2463
+        },
+        {
+          "hex": "#6f7294",
+          "coverage": 0.183
+        },
+        {
+          "hex": "#3c3b4e",
+          "coverage": 0.1705
+        },
+        {
+          "hex": "#e5b8a8",
+          "coverage": 0.1495
+        }
+      ],
+      "detail": {
+        "energy": 20.2436
+      },
+      "medium": "raster",
+      "plate": "public/images/destinations/istanbul.jpg",
+      "text": null
+    },
+    {
+      "id": "photo-paris",
+      "kind": "plate",
+      "note": "photograph of the Eiffel Tower in Paris at sunset above gardens, the wide centre photograph",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0.3575,
+        "y": 0.0849,
+        "w": 0.285,
+        "h": 0.3868
+      },
+      "px": {
+        "x": 961,
+        "y": 129,
+        "w": 766,
+        "h": 588
+      },
+      "aspect": 1.3027,
+      "palette": [
+        {
+          "hex": "#caafbe",
+          "coverage": 0.3571
+        },
+        {
+          "hex": "#777dab",
+          "coverage": 0.2325
+        },
+        {
+          "hex": "#f3cbab",
+          "coverage": 0.2187
+        },
+        {
+          "hex": "#9f9ebd",
+          "coverage": 0.1026
+        },
+        {
+          "hex": "#422f15",
+          "coverage": 0.0891
+        }
+      ],
+      "detail": {
+        "energy": 22.1019
+      },
+      "medium": "raster",
+      "plate": "public/images/destinations/paris.jpg",
+      "text": null
+    },
+    {
+      "id": "photo-maldives",
+      "kind": "plate",
+      "note": "aerial photograph of a Maldives lagoon with a curving line of overwater villas on turquoise water",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0.6484,
+        "y": 0.0849,
+        "w": 0.1749,
+        "h": 0.3868
+      },
+      "px": {
+        "x": 1743,
+        "y": 129,
+        "w": 470,
+        "h": 588
+      },
+      "aspect": 0.7993,
+      "palette": [
+        {
+          "hex": "#56c5c2",
+          "coverage": 0.4043
+        },
+        {
+          "hex": "#86afd7",
+          "coverage": 0.1949
+        },
+        {
+          "hex": "#5c93ce",
+          "coverage": 0.1573
+        },
+        {
+          "hex": "#156361",
+          "coverage": 0.1265
+        },
+        {
+          "hex": "#1569a7",
+          "coverage": 0.1169
+        }
+      ],
+      "detail": {
+        "energy": 24.2104
+      },
+      "medium": "raster",
+      "plate": "public/images/destinations/maldives.jpg",
+      "text": null
+    },
+    {
+      "id": "photo-makkah",
+      "kind": "plate",
+      "note": "photograph of the Clock Tower and the Grand Mosque in Makkah at night",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0.8289,
+        "y": 0.0849,
+        "w": 0.1711,
+        "h": 0.3868
+      },
+      "px": {
+        "x": 2228,
+        "y": 129,
+        "w": 460,
+        "h": 588
+      },
+      "aspect": 0.7823,
+      "palette": [
+        {
+          "hex": "#151626",
+          "coverage": 0.3557
+        },
+        {
+          "hex": "#151c1c",
+          "coverage": 0.2298
+        },
+        {
+          "hex": "#423930",
+          "coverage": 0.1959
+        },
+        {
+          "hex": "#6e6556",
+          "coverage": 0.1282
+        },
+        {
+          "hex": "#a79a85",
+          "coverage": 0.0904
+        }
+      ],
+      "detail": {
+        "energy": 27.8333
+      },
+      "medium": "raster",
+      "plate": "public/images/destinations/makkah.jpg",
+      "text": null
+    },
+    {
+      "id": "label-dubai",
+      "kind": "text",
+      "note": "white place-name caption reading Dubai in small medium-weight sans type",
+      "grid": null,
+      "box": {
+        "x": 0.0104,
+        "y": 0.4362,
+        "w": 0.0354,
+        "h": 0.0164
+      },
+      "px": {
+        "x": 28,
+        "y": 663,
+        "w": 95,
+        "h": 25
+      },
+      "aspect": 3.8,
+      "palette": [
+        {
+          "hex": "#2f2f36",
+          "coverage": 0.4693
+        },
+        {
+          "hex": "#f7f7f6",
+          "coverage": 0.3213
+        },
+        {
+          "hex": "#56555d",
+          "coverage": 0.083
+        },
+        {
+          "hex": "#c7c6c6",
+          "coverage": 0.0758
+        },
+        {
+          "hex": "#767b7b",
+          "coverage": 0.0505
+        }
+      ],
+      "detail": {
+        "energy": 37.6641
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 5,
+          "capHeightPx": 24.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.7347,
+          "advTall": 0.8163,
+          "advX": 0.7143,
+          "gap": 0.1429,
+          "xRatio": 0.7072,
+          "stemW": 0.1784,
+          "contrast": 1.1274,
+          "serif": null,
+          "densTall": 0.5153,
+          "densX": 0.6171,
+          "weight": 0.5153
+        },
+        "widthClass": "normal",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "label-istanbul",
+      "kind": "text",
+      "note": "white place-name caption reading Istanbul in small medium-weight sans type",
+      "grid": null,
+      "box": {
+        "x": 0.1875,
+        "y": 0.4362,
+        "w": 0.0495,
+        "h": 0.0164
+      },
+      "px": {
+        "x": 504,
+        "y": 663,
+        "w": 133,
+        "h": 25
+      },
+      "aspect": 5.32,
+      "palette": [
+        {
+          "hex": "#0e0e0b",
+          "coverage": 0.5162
+        },
+        {
+          "hex": "#f6f6f6",
+          "coverage": 0.2968
+        },
+        {
+          "hex": "#4c4c4a",
+          "coverage": 0.0673
+        },
+        {
+          "hex": "#8f8e8c",
+          "coverage": 0.0623
+        },
+        {
+          "hex": "#c9c9c8",
+          "coverage": 0.0574
+        }
+      ],
+      "detail": {
+        "energy": 54.1888
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 8,
+          "capHeightPx": 23,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.7382,
+          "advTall": 0.38,
+          "advX": 0.749,
+          "gap": 0.152,
+          "xRatio": 0.768,
+          "stemW": 0.1938,
+          "contrast": 1.2086,
+          "serif": 1.0192,
+          "densTall": 0.7265,
+          "densX": 0.5855,
+          "weight": 0.7265
+        },
+        "widthClass": "wide",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "label-paris",
+      "kind": "text",
+      "note": "white place-name caption reading Paris in small medium-weight sans type",
+      "grid": null,
+      "box": {
+        "x": 0.368,
+        "y": 0.4362,
+        "w": 0.0305,
+        "h": 0.0164
+      },
+      "px": {
+        "x": 989,
+        "y": 663,
+        "w": 82,
+        "h": 25
+      },
+      "aspect": 3.28,
+      "palette": [
+        {
+          "hex": "#f7f6f6",
+          "coverage": 0.3426
+        },
+        {
+          "hex": "#523221",
+          "coverage": 0.2639
+        },
+        {
+          "hex": "#7f5136",
+          "coverage": 0.213
+        },
+        {
+          "hex": "#d3c5bd",
+          "coverage": 0.0972
+        },
+        {
+          "hex": "#947a69",
+          "coverage": 0.0833
+        }
+      ],
+      "detail": {
+        "energy": 32.4342
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 5,
+          "capHeightPx": 24.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6122,
+          "advTall": 0.6122,
+          "advX": 0.6122,
+          "gap": 0.1429,
+          "xRatio": 0.7094,
+          "stemW": 0.1849,
+          "contrast": 1.1631,
+          "serif": null,
+          "densTall": 0.5386,
+          "densX": 0.6078,
+          "weight": 0.5386
+        },
+        "widthClass": "normal",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "label-maldives",
+      "kind": "text",
+      "note": "white place-name caption reading Maldives in small medium-weight sans type",
+      "grid": null,
+      "box": {
+        "x": 0.6589,
+        "y": 0.4362,
+        "w": 0.0525,
+        "h": 0.0164
+      },
+      "px": {
+        "x": 1771,
+        "y": 663,
+        "w": 141,
+        "h": 25
+      },
+      "aspect": 5.64,
+      "palette": [
+        {
+          "hex": "#18766f",
+          "coverage": 0.5297
+        },
+        {
+          "hex": "#f4f7f7",
+          "coverage": 0.3135
+        },
+        {
+          "hex": "#b5d3d2",
+          "coverage": 0.076
+        },
+        {
+          "hex": "#69a4a1",
+          "coverage": 0.0618
+        },
+        {
+          "hex": "#389484",
+          "coverage": 0.019
+        }
+      ],
+      "detail": {
+        "energy": 45.3063
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 8,
+          "capHeightPx": 24.2,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.7238,
+          "advTall": 0.486,
+          "advX": 0.7238,
+          "gap": 0.1241,
+          "xRatio": 0.7141,
+          "stemW": 0.1709,
+          "contrast": 1.1293,
+          "serif": 0.9442,
+          "densTall": 0.7094,
+          "densX": 0.6047,
+          "weight": 0.7094
+        },
+        "widthClass": "wide",
+        "weightClass": "black"
+      }
+    },
+    {
+      "id": "label-makkah",
+      "kind": "text",
+      "note": "white place-name caption reading Makkah in small medium-weight sans type",
+      "grid": null,
+      "box": {
+        "x": 0.8393,
+        "y": 0.4362,
+        "w": 0.0469,
+        "h": 0.0164
+      },
+      "px": {
+        "x": 2256,
+        "y": 663,
+        "w": 126,
+        "h": 25
+      },
+      "aspect": 5.04,
+      "palette": [
+        {
+          "hex": "#f6f6f5",
+          "coverage": 0.3478
+        },
+        {
+          "hex": "#584e42",
+          "coverage": 0.2928
+        },
+        {
+          "hex": "#7a7568",
+          "coverage": 0.1681
+        },
+        {
+          "hex": "#322b2b",
+          "coverage": 0.1362
+        },
+        {
+          "hex": "#aca99e",
+          "coverage": 0.0551
+        }
+      ],
+      "detail": {
+        "energy": 46.9972
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 6,
+          "capHeightPx": 24.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.7347,
+          "advTall": 0.7143,
+          "advX": 0.7347,
+          "gap": 0.1224,
+          "xRatio": 0.703,
+          "stemW": 0.1756,
+          "contrast": 1.1958,
+          "serif": 0.9791,
+          "densTall": 0.4953,
+          "densX": 0.6503,
+          "weight": 0.4953
+        },
+        "widthClass": "wide",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "headline",
+      "kind": "text",
+      "note": "three-line headline Visas and flights, sorted at one desk in Dubai. in charcoal medium grotesque sans",
+      "grid": null,
+      "box": {
+        "x": 0.0357,
+        "y": 0.5388,
+        "w": 0.3188,
+        "h": 0.1855
+      },
+      "px": {
+        "x": 96,
+        "y": 819,
+        "w": 857,
+        "h": 282
+      },
+      "aspect": 3.039,
+      "palette": [
+        {
+          "hex": "#e8e8e6",
+          "coverage": 0.7834
+        },
+        {
+          "hex": "#1d1f2f",
+          "coverage": 0.1083
+        },
+        {
+          "hex": "#182727",
+          "coverage": 0.0849
+        },
+        {
+          "hex": "#b6b5b4",
+          "coverage": 0.0118
+        },
+        {
+          "hex": "#737477",
+          "coverage": 0.0117
+        }
+      ],
+      "detail": {
+        "energy": 63.1906
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 3,
+          "glyphs": 37,
+          "capHeightPx": 65.5,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.6963,
+          "advTall": 0.5168,
+          "advX": 0.6992,
+          "gap": 0.123,
+          "xRatio": 0.7243,
+          "stemW": 0.1884,
+          "contrast": 1.1763,
+          "serif": 0.991,
+          "densTall": 0.5192,
+          "densX": 0.6071,
+          "weight": 0.5192
+        },
+        "widthClass": "normal",
+        "weightClass": "medium",
+        "chosen": {
+          "family": "Wix Madefor Display",
+          "weight": 700,
+          "fontSizePx": 91,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 15,
+            "capHeightPx": 65.8,
+            "inkIsDark": true,
+            "allCaps": false,
+            "advance": 0.6683,
+            "advTall": 0.4708,
+            "advX": 0.6683,
+            "gap": 0.1443,
+            "xRatio": 0.6902,
+            "stemW": 0.1822,
+            "contrast": 1.2102,
+            "serif": 1,
+            "densTall": 0.5298,
+            "densX": 0.5942,
+            "weight": 0.5298
+          },
+          "stamp": "1b3f29b6fbc8"
+        }
+      }
+    },
+    {
+      "id": "lede",
+      "kind": "text",
+      "note": "two-line paragraph in small charcoal sans describing the services",
+      "grid": null,
+      "box": {
+        "x": 0.0357,
+        "y": 0.7618,
+        "w": 0.3743,
+        "h": 0.0599
+      },
+      "px": {
+        "x": 96,
+        "y": 1158,
+        "w": 1006,
+        "h": 91
+      },
+      "aspect": 11.0549,
+      "palette": [
+        {
+          "hex": "#e9e8e5",
+          "coverage": 0.858
+        },
+        {
+          "hex": "#272939",
+          "coverage": 0.0594
+        },
+        {
+          "hex": "#2c3636",
+          "coverage": 0.0361
+        },
+        {
+          "hex": "#a8a8a8",
+          "coverage": 0.0252
+        },
+        {
+          "hex": "#76797b",
+          "coverage": 0.0213
+        }
+      ],
+      "detail": {
+        "energy": 62.0205
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 103,
+          "capHeightPx": 23,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.6262,
+          "advTall": 0.475,
+          "advX": 0.6478,
+          "gap": 0.1512,
+          "xRatio": 0.7124,
+          "stemW": 0.1425,
+          "contrast": 1.0922,
+          "serif": 0.9482,
+          "densTall": 0.4453,
+          "densX": 0.509,
+          "weight": 0.4453
+        },
+        "widthClass": "normal",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "cta-start",
+      "kind": "control",
+      "note": "solid burgundy pill button with white text Start on WhatsApp",
+      "grid": null,
+      "box": {
+        "x": 0.0361,
+        "y": 0.8572,
+        "w": 0.1544,
+        "h": 0.0711
+      },
+      "px": {
+        "x": 97,
+        "y": 1303,
+        "w": 415,
+        "h": 108
+      },
+      "aspect": 3.8426,
+      "palette": [
+        {
+          "hex": "#670929",
+          "coverage": 0.8196
+        },
+        {
+          "hex": "#edecea",
+          "coverage": 0.1359
+        },
+        {
+          "hex": "#d4b8bc",
+          "coverage": 0.0284
+        },
+        {
+          "hex": "#8f4b66",
+          "coverage": 0.0113
+        },
+        {
+          "hex": "#bd8b9d",
+          "coverage": 0.0048
+        }
+      ],
+      "detail": {
+        "energy": 35.2914
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "cta-call",
+      "kind": "text",
+      "note": "text link Call +971 4 000 0000 with a thin underline",
+      "grid": null,
+      "box": {
+        "x": 0.218,
+        "y": 0.8816,
+        "w": 0.1135,
+        "h": 0.0296
+      },
+      "px": {
+        "x": 586,
+        "y": 1340,
+        "w": 305,
+        "h": 45
+      },
+      "aspect": 6.7778,
+      "palette": [
+        {
+          "hex": "#ebeae5",
+          "coverage": 0.7658
+        },
+        {
+          "hex": "#c1c0bc",
+          "coverage": 0.0874
+        },
+        {
+          "hex": "#212232",
+          "coverage": 0.0807
+        },
+        {
+          "hex": "#1f2c2c",
+          "coverage": 0.0407
+        },
+        {
+          "hex": "#4f5359",
+          "coverage": 0.0254
+        }
+      ],
+      "detail": {
+        "energy": 69.0262
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 16,
+          "capHeightPx": 20.4,
+          "inkIsDark": true,
+          "allCaps": true,
+          "advance": 0.7856,
+          "advTall": 0.7856,
+          "advX": null,
+          "gap": 0.1473,
+          "xRatio": null,
+          "stemW": 0.1808,
+          "contrast": 1.078,
+          "serif": 0.9416,
+          "densTall": 0.489,
+          "densX": null,
+          "weight": 0.489
+        },
+        "widthClass": "wide",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "svc-visas",
+      "kind": "control",
+      "note": "service index link: title Visas with one line of small grey text and a small burgundy chevron at the right",
+      "grid": null,
+      "box": {
+        "x": 0.5298,
+        "y": 0.5461,
+        "w": 0.2009,
+        "h": 0.0638
+      },
+      "px": {
+        "x": 1424,
+        "y": 830,
+        "w": 540,
+        "h": 97
+      },
+      "aspect": 5.567,
+      "palette": [
+        {
+          "hex": "#e8e8e7",
+          "coverage": 0.9389
+        },
+        {
+          "hex": "#76787e",
+          "coverage": 0.022
+        },
+        {
+          "hex": "#1e2530",
+          "coverage": 0.0198
+        },
+        {
+          "hex": "#a9a9a9",
+          "coverage": 0.0178
+        },
+        {
+          "hex": "#611131",
+          "coverage": 0.0015
+        }
+      ],
+      "detail": {
+        "energy": 24.0516
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "svc-visas-abroad",
+      "kind": "control",
+      "note": "service index link: title Visas abroad with one line of small grey text and a small burgundy chevron at the right",
+      "grid": null,
+      "box": {
+        "x": 0.7652,
+        "y": 0.5461,
+        "w": 0.2009,
+        "h": 0.0638
+      },
+      "px": {
+        "x": 2057,
+        "y": 830,
+        "w": 540,
+        "h": 97
+      },
+      "aspect": 5.567,
+      "palette": [
+        {
+          "hex": "#e8e8e7",
+          "coverage": 0.8926
+        },
+        {
+          "hex": "#1e2030",
+          "coverage": 0.031
+        },
+        {
+          "hex": "#77797d",
+          "coverage": 0.0301
+        },
+        {
+          "hex": "#b4b4b3",
+          "coverage": 0.0288
+        },
+        {
+          "hex": "#182626",
+          "coverage": 0.0175
+        }
+      ],
+      "detail": {
+        "energy": 37.7499
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "svc-flights",
+      "kind": "control",
+      "note": "service index link: title Flights with one line of small grey text and a small burgundy chevron at the right",
+      "grid": null,
+      "box": {
+        "x": 0.5298,
+        "y": 0.6915,
+        "w": 0.2009,
+        "h": 0.0625
+      },
+      "px": {
+        "x": 1424,
+        "y": 1051,
+        "w": 540,
+        "h": 95
+      },
+      "aspect": 5.6842,
+      "palette": [
+        {
+          "hex": "#e8e8e7",
+          "coverage": 0.9317
+        },
+        {
+          "hex": "#727479",
+          "coverage": 0.0289
+        },
+        {
+          "hex": "#1e2232",
+          "coverage": 0.0193
+        },
+        {
+          "hex": "#1a2929",
+          "coverage": 0.0102
+        },
+        {
+          "hex": "#ababaa",
+          "coverage": 0.01
+        }
+      ],
+      "detail": {
+        "energy": 24.9044
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "svc-attestation",
+      "kind": "control",
+      "note": "service index link: title Attestation with one line of small grey text and a small burgundy chevron at the right",
+      "grid": null,
+      "box": {
+        "x": 0.7652,
+        "y": 0.6915,
+        "w": 0.2009,
+        "h": 0.0625
+      },
+      "px": {
+        "x": 2057,
+        "y": 1051,
+        "w": 540,
+        "h": 95
+      },
+      "aspect": 5.6842,
+      "palette": [
+        {
+          "hex": "#e8e8e7",
+          "coverage": 0.8932
+        },
+        {
+          "hex": "#1e2530",
+          "coverage": 0.0407
+        },
+        {
+          "hex": "#707277",
+          "coverage": 0.0395
+        },
+        {
+          "hex": "#aaa9a8",
+          "coverage": 0.0236
+        },
+        {
+          "hex": "#484d53",
+          "coverage": 0.003
+        }
+      ],
+      "detail": {
+        "energy": 35.81
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "svc-typing",
+      "kind": "control",
+      "note": "service index link: title Typing with one line of small grey text and a small burgundy chevron at the right",
+      "grid": null,
+      "box": {
+        "x": 0.5298,
+        "y": 0.8329,
+        "w": 0.2009,
+        "h": 0.0658
+      },
+      "px": {
+        "x": 1424,
+        "y": 1266,
+        "w": 540,
+        "h": 100
+      },
+      "aspect": 5.4,
+      "palette": [
+        {
+          "hex": "#e8e8e7",
+          "coverage": 0.926
+        },
+        {
+          "hex": "#787c81",
+          "coverage": 0.0363
+        },
+        {
+          "hex": "#212232",
+          "coverage": 0.0183
+        },
+        {
+          "hex": "#bcbbba",
+          "coverage": 0.013
+        },
+        {
+          "hex": "#1a2a2a",
+          "coverage": 0.0063
+        }
+      ],
+      "detail": {
+        "energy": 25.9333
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "svc-holidays",
+      "kind": "control",
+      "note": "service index link: title Holidays and Umrah with one line of small grey text and a small burgundy chevron at the right",
+      "grid": null,
+      "box": {
+        "x": 0.7652,
+        "y": 0.8329,
+        "w": 0.2009,
+        "h": 0.0658
+      },
+      "px": {
+        "x": 2057,
+        "y": 1266,
+        "w": 540,
+        "h": 100
+      },
+      "aspect": 5.4,
+      "palette": [
+        {
+          "hex": "#e8e8e6",
+          "coverage": 0.8635
+        },
+        {
+          "hex": "#1f2631",
+          "coverage": 0.068
+        },
+        {
+          "hex": "#73767b",
+          "coverage": 0.0336
+        },
+        {
+          "hex": "#a6a7a8",
+          "coverage": 0.0245
+        },
+        {
+          "hex": "#4a4d52",
+          "coverage": 0.0104
+        }
+      ],
+      "detail": {
+        "energy": 46.5764
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "rule-a1",
+      "kind": "chrome",
+      "note": "thin grey hairline rule separating service index rows",
+      "grid": null,
+      "box": {
+        "x": 0.5305,
+        "y": 0.6526,
+        "w": 0.1994,
+        "h": 0.0046
+      },
+      "px": {
+        "x": 1426,
+        "y": 992,
+        "w": 536,
+        "h": 7
+      },
+      "aspect": 76.5714,
+      "palette": [
+        {
+          "hex": "#e8e8e8",
+          "coverage": 0.6685
+        },
+        {
+          "hex": "#a8a8a8",
+          "coverage": 0.3315
+        }
+      ],
+      "detail": {
+        "energy": 11.5442
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "rule-a2",
+      "kind": "chrome",
+      "note": "thin grey hairline rule separating service index rows",
+      "grid": null,
+      "box": {
+        "x": 0.766,
+        "y": 0.6526,
+        "w": 0.1994,
+        "h": 0.0046
+      },
+      "px": {
+        "x": 2059,
+        "y": 992,
+        "w": 536,
+        "h": 7
+      },
+      "aspect": 76.5714,
+      "palette": [
+        {
+          "hex": "#e8e8e8",
+          "coverage": 0.6685
+        },
+        {
+          "hex": "#a8a8a7",
+          "coverage": 0.3315
+        }
+      ],
+      "detail": {
+        "energy": 11.6119
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "rule-b1",
+      "kind": "chrome",
+      "note": "thin grey hairline rule separating service index rows",
+      "grid": null,
+      "box": {
+        "x": 0.5305,
+        "y": 0.7974,
+        "w": 0.1994,
+        "h": 0.0046
+      },
+      "px": {
+        "x": 1426,
+        "y": 1212,
+        "w": 536,
+        "h": 7
+      },
+      "aspect": 76.5714,
+      "palette": [
+        {
+          "hex": "#e3e3e3",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 11.8418
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "rule-b2",
+      "kind": "chrome",
+      "note": "thin grey hairline rule separating service index rows",
+      "grid": null,
+      "box": {
+        "x": 0.766,
+        "y": 0.7974,
+        "w": 0.1994,
+        "h": 0.0046
+      },
+      "px": {
+        "x": 2059,
+        "y": 1212,
+        "w": 536,
+        "h": 7
+      },
+      "aspect": 76.5714,
+      "palette": [
+        {
+          "hex": "#e3e3e3",
+          "coverage": 1
+        }
+      ],
+      "detail": {
+        "energy": 11.9136
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    }
+  ]
+}

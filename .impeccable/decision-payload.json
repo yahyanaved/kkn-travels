@@ -1,0 +1,122 @@
+{
+  "title": "Choose the visual world for KKN Travels",
+  "question": "The roll assigned Dubai Wayfinding. Keep it, take the alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Dubai Wayfinding",
+      "kicker": "THE ROLL",
+      "lineage": "UAE road and street-name signs, Arabic above English",
+      "thesis": "The site is the sign: every errand gets a bilingual direction panel that points you to the right counter.",
+      "palette": ["#00539F", "#00703C", "#6B3F1D", "#FFFFFF", "#FFD100", "#E9EDF0"],
+      "materials": ["reflective sign sheeting", "white inset keyline", "arrows and route shields"],
+      "viewport": "A sign-blue field fills the screen: one huge bilingual headline, Arabic above English, and direction panels pointing to Visas, Flights, Attestation and Holidays.",
+      "risk": "Can read as government or novelty if the panels are copied literally instead of refined.",
+      "raised": [
+        { "from": "challenger-drawcord-cape", "raise": "One control re-rigs the whole page: the language switch trades Arabic and English places and flips every arrow." },
+        { "from": "challenger-accretion-disk", "raise": "The sign colour owns the entire first viewport, not a panel floating on white." },
+        { "from": "challenger-shader-portal", "raise": "One sign-scale phrase carries the headline; everything else stays small at the margins." },
+        { "from": "challenger-festival-hoarding", "raise": "One calm white panel holds the only form in the first viewport." },
+        { "from": "challenger-decollage", "raise": "Panels stack in gantry order with real overlap, never a flat grid of cards." }
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.png"
+    },
+    {
+      "id": "challenger-split-flap",
+      "label": "Departures Board",
+      "verdict": "competitive",
+      "lineage": "concourse split-flap departure boards",
+      "thesis": "Every service is a row on the board: the errand, what to bring, how long it takes, which counter.",
+      "palette": ["#111315", "#F2F2EE", "#8C9299", "#F5A623", "#D64533"],
+      "materials": ["split-flap cells", "brushed steel frame", "amber row lamps"],
+      "viewport": "A full-width board of service rows that flap into place, ending in a WhatsApp counter column.",
+      "case": "Holds clarity: fixed columns make services scannable. Loses on identification: a concourse board belongs to any city, not Dubai. It also topped my own list before the roll.",
+      "risk": "The flap board is travel's best-known trope, and a black board reads heavy on a phone in daylight.",
+      "comp": ".impeccable/mocks/decision/challenger-split-flap.png",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse-hero.webp"
+    },
+    {
+      "id": "challenger-drawcord-cape",
+      "label": "Drawcord Cape",
+      "verdict": "declined",
+      "lineage": "transforming silk cape",
+      "thesis": "A flat plane that one pull gathers into a shaped form.",
+      "palette": ["#0E0E10", "#C9A227", "#3A3D42", "#5B6470"],
+      "materials": ["matte silk", "gold drawcord"],
+      "viewport": "A black semicircle that gathers into service pleats when the cord is pulled.",
+      "case": "Fuses poorly: nobody sorting a visa identifies with couture, and the offer hides behind the gesture.",
+      "risk": "Beautiful and unreadable as a travel desk.",
+      "kept": "One control that visibly transforms the whole form.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-drawcord-transforming-cape-hero.webp"
+    },
+    {
+      "id": "challenger-accretion-disk",
+      "label": "Accretion Disk",
+      "verdict": "declined",
+      "lineage": "black-hole accretion imagery",
+      "thesis": "Services orbit a dark centre on warped light rings.",
+      "palette": ["#000000", "#DCE9FF", "#C2401F", "#E5B84A"],
+      "materials": ["void black", "bent light"],
+      "viewport": "A glowing disk with service labels riding its rings.",
+      "case": "Fuses poorly: an irreversible threshold is the wrong story for a visa application, and labels on curves cost clarity.",
+      "risk": "Spectacle with no errand in it.",
+      "kept": "Total commitment of one colour field to the whole frame.",
+      "hero": "https://impeccable.style/worlds/cards/galaxies-nebulae-deep-time-accretion-disk-threshold-hero.webp"
+    },
+    {
+      "id": "challenger-shader-portal",
+      "label": "Shader Portal",
+      "verdict": "declined",
+      "lineage": "experiential studio WebGL sites",
+      "thesis": "A living shader fills the screen with thin type floating over it.",
+      "palette": ["#0B1E4A", "#F4F4F0", "#FF5A1F"],
+      "materials": ["fragment shader", "film grain"],
+      "viewport": "One huge word over a breathing colour field, links in the corners.",
+      "case": "Fuses poorly: it hides the service list and is heavy on the low-end phones this audience uses.",
+      "risk": "Reads as an agency showreel, not a place to get a visa.",
+      "kept": "The scale courage of one oversized phrase against small margins.",
+      "hero": "https://impeccable.style/worlds/cards/webgl-shader-portal-hero.webp"
+    },
+    {
+      "id": "challenger-festival-hoarding",
+      "label": "Festival Hoarding",
+      "verdict": "declined",
+      "lineage": "screenprinted street-fair flyers",
+      "thesis": "A loud paper collage with one calm white ticket panel on top.",
+      "palette": ["#F3EDE0", "#111111", "#FF6A00", "#EE1F8A", "#7B57F0"],
+      "materials": ["gouache flats", "riso grain", "torn deckle"],
+      "viewport": "Stacked colour-per-letter headline over a cut-paper city, a white finder card floating above.",
+      "case": "Fuses poorly: festival loudness undercuts the trust a passport handover needs.",
+      "risk": "Fun for holidays, wrong for immigration paperwork.",
+      "kept": "One calm white panel as the single place to act.",
+      "hero": "https://impeccable.style/worlds/cards/fly-posted-festival-hoarding-built-hero.webp"
+    },
+    {
+      "id": "challenger-decollage",
+      "label": "Torn Billboard",
+      "verdict": "declined",
+      "lineage": "Paris decollage posters",
+      "thesis": "Layers of old posters torn through, the tears as composition.",
+      "palette": ["#D8D2C4", "#8A8D8F", "#B4553A", "#3F5A78"],
+      "materials": ["bleached poster ink", "torn paper fibre"],
+      "viewport": "Fragments of four type systems exposed through ragged tears.",
+      "case": "Fuses poorly: no fragment is complete, and this audience needs complete answers fast.",
+      "risk": "Illegible by design.",
+      "kept": "Real layering and overlap order instead of a flat grid.",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-decollage-torn-billboard-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "comp", "toggle": true },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "What Dubai travel agencies ship: skyline photo, navy and gold, icon service cards, done at full craft.",
+    "palette": ["#0B1F3A", "#C9A24B", "#FFFFFF", "#F5F6F8"],
+    "materials": ["skyline photography", "icon service cards"],
+    "viewport": "A full-bleed Dubai skyline photo with a headline, two buttons and a row of service cards beneath.",
+    "risk": "Indistinguishable from the competition by design.",
+    "comp": ".impeccable/mocks/decision/canon.png"
+  },
+  "steer": true
+}

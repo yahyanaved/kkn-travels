@@ -1,0 +1,52 @@
+{
+  "title": "Choose the visual world for KKN Travels",
+  "question": "Three luxury-minimal directions with photography, as you asked. Pick one, or type a steer.",
+  "options": [
+    {
+      "id": "safer-private-terminal",
+      "label": "Private Terminal",
+      "lineage": "private aviation company sites",
+      "thesis": "Dark, quiet and cinematic: one full-screen photograph, a fine serif headline and almost nothing else.",
+      "palette": ["#0E1512", "#E9E2D3", "#B89B6A", "#1F2A26"],
+      "materials": ["full-bleed blue-hour photography", "fine serif display", "dark glass and brass hairlines"],
+      "viewport": "A business-jet wing at dawn fills the screen; a light serif headline sits in the dark space at left, with a slim glass enquiry bar along the bottom.",
+      "risk": "Dark with a brass accent sits close to the navy-and-gold habit of Dubai agencies; it has to win on restraint.",
+      "comp": ".impeccable/mocks/decision/r1-private-terminal.png"
+    },
+    {
+      "id": "safer-concierge",
+      "label": "Concierge Desk",
+      "lineage": "five-star hotel and concierge sites",
+      "thesis": "Light, spacious and editorial: stone-white space, a refined serif, and two carefully framed photographs.",
+      "palette": ["#F6F3EE", "#1C1B19", "#24483C", "#8A6F4E", "#D9D2C5"],
+      "materials": ["stone-white space", "editorial photography", "hairline rules", "deep emerald"],
+      "viewport": "A calm serif headline on stone white at left; at right a tall photograph of a passport handed across a marble desk, a smaller cloudscape overlapping it; services listed on a hairline row beneath.",
+      "risk": "Soft and understated; needs strong photography or it reads as a hotel template.",
+      "comp": ".impeccable/mocks/decision/r1-concierge.png"
+    },
+    {
+      "id": "safer-morning-skyline",
+      "label": "Morning Skyline",
+      "lineage": "premium airline and private-bank sites",
+      "thesis": "Bright, corporate and confident: a pale morning skyline, deep sapphire type and a frosted-glass enquiry card.",
+      "palette": ["#FFFFFF", "#0B2A4A", "#5B8DB8", "#E8EEF5"],
+      "materials": ["cool daylight photography", "frosted glass with depth", "modern grotesque type"],
+      "viewport": "Dubai's skyline in soft morning haze fills the screen; a sapphire headline at left, a frosted-glass enquiry card at right, and a white service bar along the bottom.",
+      "risk": "The most familiar of the three: a skyline hero is what the category already ships, just cooler and cleaner.",
+      "comp": ".impeccable/mocks/decision/r1-morning-skyline.png"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "comp", "toggle": true },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "What agencies like Musafir, Akbar Travels and Regal Tours ship: skyline photo, navy and gold, icon service cards, done at full craft.",
+    "palette": ["#0B1F3A", "#C9A24B", "#FFFFFF", "#F5F6F8"],
+    "materials": ["skyline photography", "icon service cards"],
+    "viewport": "A full-bleed Dubai skyline photo with a headline, two buttons and a row of service cards beneath.",
+    "risk": "Indistinguishable from the competition by design.",
+    "comp": ".impeccable/mocks/decision/canon.png"
+  },
+  "steer": true
+}

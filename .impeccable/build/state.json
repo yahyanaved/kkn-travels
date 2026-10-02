@@ -1,0 +1,315 @@
+{
+  "tool": "build-phase",
+  "version": 2,
+  "startedAt": "2026-10-02T11:13:36.471Z",
+  "comp": ".impeccable/mocks/panorama.png",
+  "direction": null,
+  "breakpoint": "1440x814",
+  "artifact": null,
+  "phase": "review",
+  "phases": {
+    "comps": {
+      "status": "skipped",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [
+        {
+          "at": "2026-10-02T11:13:36.471Z",
+          "text": "started with an approved comp; the comp round happened before this state (surface round or manual)"
+        }
+      ],
+      "gate": null,
+      "forced": null
+    },
+    "spec": {
+      "status": "closed",
+      "openedAt": "2026-10-02T11:13:36.470Z",
+      "closedAt": "2026-10-02T11:17:24.553Z",
+      "attempts": 2,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "29 regions, 5 plates, 11 text regions measured",
+        "at": "2026-10-02T11:17:24.553Z"
+      },
+      "forced": null
+    },
+    "plates": {
+      "status": "closed",
+      "openedAt": "2026-10-02T11:17:24.553Z",
+      "closedAt": "2026-10-02T11:20:20.658Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "5/5 plates",
+        "at": "2026-10-02T11:20:20.658Z"
+      },
+      "forced": null
+    },
+    "hero": {
+      "status": "closed",
+      "openedAt": "2026-10-02T11:20:20.658Z",
+      "closedAt": "2026-10-02T11:34:06.815Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "hero 86% (match)",
+        "score": 0.8557,
+        "verdict": "match",
+        "report": ".impeccable/review/diff/hero/report.json",
+        "sideBySide": "D:/job/kkn-travels/.impeccable/review/diff/hero/side-by-side.png",
+        "worst": [
+          "label-makkah drift 49%",
+          "photo-dubai drift 50%",
+          "photo-paris drift 51%"
+        ],
+        "worstIds": [
+          "label-makkah",
+          "photo-dubai",
+          "photo-paris"
+        ],
+        "worstCrops": [
+          {
+            "id": "label-makkah",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.4928,
+              "structure": 0.3549,
+              "color": 0.5788,
+              "colorIntersection": 0.3062,
+              "paletteMatch": 0.7255,
+              "detail": 0.6081,
+              "detailRaw": 0.6133,
+              "detailAdded": 0.0104,
+              "bands": 0.7945
+            },
+            "file": ".impeccable/review/diff/hero/regions/label-makkah.png"
+          },
+          {
+            "id": "photo-dubai",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.5005,
+              "structure": 0.545,
+              "color": 0.5478,
+              "colorIntersection": 0.4561,
+              "paletteMatch": 0.5971,
+              "detail": 0.4695,
+              "detailRaw": 0.6466,
+              "detailAdded": 0.3542,
+              "bands": 0.4
+            },
+            "file": ".impeccable/review/diff/hero/regions/photo-dubai.png"
+          },
+          {
+            "id": "photo-paris",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.5099,
+              "structure": 0.6558,
+              "color": 0.5808,
+              "colorIntersection": 0.4446,
+              "paletteMatch": 0.654,
+              "detail": 0.4025,
+              "detailRaw": 0.6004,
+              "detailAdded": 0.3958,
+              "bands": 0.5714
+            },
+            "file": ".impeccable/review/diff/hero/regions/photo-paris.png"
+          }
+        ],
+        "advisories": [
+          "(advisory, unchanged for 3+ attempts) text label-dubai: ink is #0e1e26 in the build, #f7f7f6 in the comp; use the comp's colour",
+          "(advisory, unchanged for 3+ attempts) text label-paris: ink is #f4f7f7 in the build, #523221 in the comp; use the comp's colour",
+          "(advisory, unchanged for 3+ attempts) text label-makkah: ink is #f8f8f8 in the build, #584e42 in the comp; use the comp's colour"
+        ],
+        "regionVerdicts": {
+          "nav-bar": "match",
+          "wordmark": "drift",
+          "nav-links": "match",
+          "nav-lang": "drift",
+          "nav-whatsapp": "match",
+          "photo-dubai": "drift",
+          "photo-istanbul": "drift",
+          "photo-paris": "drift",
+          "photo-maldives": "drift",
+          "photo-makkah": "drift",
+          "label-dubai": "drift",
+          "label-istanbul": "drift",
+          "label-paris": "drift",
+          "label-maldives": "drift",
+          "label-makkah": "drift",
+          "headline": "drift",
+          "lede": "match",
+          "cta-start": "match",
+          "cta-call": "drift",
+          "svc-visas": "match",
+          "svc-visas-abroad": "drift",
+          "svc-flights": "match",
+          "svc-attestation": "match",
+          "svc-typing": "match",
+          "svc-holidays": "drift",
+          "rule-a1": "match",
+          "rule-a2": "match",
+          "rule-b1": "drift",
+          "rule-b2": "drift"
+        },
+        "at": "2026-10-02T11:34:06.814Z"
+      },
+      "forced": null,
+      "records": 11,
+      "readingsSeen": {
+        "text nav-links: the face renders 36% heavier than the comp's (ink density 0.70 vs 0.52); drop a weight step or use the ranked face": 1,
+        "text nav-links: ink is #737683 in the build, #212333 in the comp; use the comp's colour": 1,
+        "text nav-lang: ink is #484858 in the build, #151727 in the comp; use the comp's colour": 1,
+        "text lede: ink is #d1b190 in the build, #272939 in the comp; use the comp's colour": 1,
+        "text cta-call: ink is #797979 in the build, #212232 in the comp; use the comp's colour": 1,
+        "chrome nav-bar: its ink is 100px tall in the build and 70px in the comp (+30px); match the height, not only the position": 1,
+        "control cta-start: its rule sits 1px into the box in the comp and 101px in the build (+100px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "text label-dubai: ink is #483628 in the build, #f5f5f5 in the comp; use the comp's colour": 1,
+        "text label-makkah: ink is #1a181a in the build, #f5f5f4 in the comp; use the comp's colour": 1,
+        "text label-dubai: ink is #41342b in the build, #f5f5f5 in the comp; use the comp's colour": 1,
+        "text label-makkah: ink is #231d22 in the build, #f5f5f4 in the comp; use the comp's colour": 1,
+        "text label-istanbul: the face renders 28% lighter than the comp's (ink density 0.50 vs 0.69); raise a weight step or use the ranked face": 1,
+        "text label-makkah: ink is #292727 in the build, #f5f5f4 in the comp; use the comp's colour": 1,
+        "text label-dubai: ink is #0e1e26 in the build, #f7f7f6 in the comp; use the comp's colour": 4,
+        "text label-paris: ink is #f4f7f7 in the build, #523221 in the comp; use the comp's colour": 4,
+        "text label-makkah: ink is #f8f8f8 in the build, #584e42 in the comp; use the comp's colour": 4
+      },
+      "history": [
+        {
+          "at": "2026-10-02T11:34:06.814Z",
+          "score": 0.8557,
+          "worstIds": [
+            "label-makkah",
+            "photo-dubai",
+            "photo-paris"
+          ],
+          "regionVerdicts": {
+            "nav-bar": "match",
+            "wordmark": "drift",
+            "nav-links": "match",
+            "nav-lang": "drift",
+            "nav-whatsapp": "match",
+            "photo-dubai": "drift",
+            "photo-istanbul": "drift",
+            "photo-paris": "drift",
+            "photo-maldives": "drift",
+            "photo-makkah": "drift",
+            "label-dubai": "drift",
+            "label-istanbul": "drift",
+            "label-paris": "drift",
+            "label-maldives": "drift",
+            "label-makkah": "drift",
+            "headline": "drift",
+            "lede": "match",
+            "cta-start": "match",
+            "cta-call": "drift",
+            "svc-visas": "match",
+            "svc-visas-abroad": "drift",
+            "svc-flights": "match",
+            "svc-attestation": "match",
+            "svc-typing": "match",
+            "svc-holidays": "drift",
+            "rule-a1": "match",
+            "rule-a2": "match",
+            "rule-b1": "drift",
+            "rule-b2": "drift"
+          },
+          "artifactHash": null
+        }
+      ]
+    },
+    "sections": {
+      "status": "closed",
+      "openedAt": "2026-10-02T11:34:06.815Z",
+      "closedAt": "2026-10-02T11:43:49.931Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no mechanical gate",
+        "at": "2026-10-02T11:43:49.931Z"
+      },
+      "forced": null
+    },
+    "motion": {
+      "status": "closed",
+      "openedAt": "2026-10-02T11:43:49.931Z",
+      "closedAt": "2026-10-02T11:45:01.761Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no mechanical gate",
+        "at": "2026-10-02T11:45:01.761Z"
+      },
+      "forced": null
+    },
+    "responsive": {
+      "status": "closed",
+      "openedAt": "2026-10-02T11:45:01.761Z",
+      "closedAt": "2026-10-02T11:48:58.640Z",
+      "attempts": 7,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "desktop 86% (match)",
+        "score": 0.8559,
+        "sideBySide": "D:/job/kkn-travels/.impeccable/review/diff/desktop/side-by-side.png",
+        "at": "2026-10-02T11:48:58.639Z"
+      },
+      "forced": null
+    },
+    "review": {
+      "status": "closed",
+      "openedAt": "2026-10-02T11:48:58.640Z",
+      "closedAt": "2026-10-02T12:19:09.360Z",
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    }
+  },
+  "finish": {
+    "disposition": "ship",
+    "at": "2026-10-02T12:19:09.360Z",
+    "phaseAtFinish": "review"
+  },
+  "plates": {
+    "photo-dubai": {
+      "status": "ok",
+      "score": 0.4777,
+      "size": "1792x2240"
+    },
+    "photo-istanbul": {
+      "status": "ok",
+      "score": 0.4831,
+      "size": "1792x2240"
+    },
+    "photo-paris": {
+      "status": "ok",
+      "score": 0.5739,
+      "size": "2336x1744"
+    },
+    "photo-maldives": {
+      "status": "ok",
+      "score": 0.4342,
+      "size": "1792x2240"
+    },
+    "photo-makkah": {
+      "status": "ok",
+      "score": 0.5375,
+      "size": "1792x2240"
+    }
+  }
+}

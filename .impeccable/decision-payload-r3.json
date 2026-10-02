@@ -1,0 +1,109 @@
+{
+  "title": "Choose the visual world for KKN Travels",
+  "question": "Nine luxury-minimal designs built on famous destinations, no aircraft. Pick one, or type a steer.",
+  "options": [
+    {
+      "id": "dest-grand-tour",
+      "label": "1. Grand Tour",
+      "lineage": "five-star hotel and concierge sites",
+      "thesis": "Light and editorial: stone white, a refined serif, and three tall destination photographs in a staggered row.",
+      "palette": ["#F6F3EE", "#1C1B19", "#24483C", "#D9D2C5"],
+      "materials": ["stone-white space", "three portrait photographs", "hairline service row"],
+      "viewport": "Serif headline at left; Santorini, Paris and the Maldives as three tall staggered photographs at right; services on a hairline row beneath.",
+      "risk": "Understated; depends on consistently good photography.",
+      "comp": ".impeccable/mocks/decision/r3-grand-tour.png"
+    },
+    {
+      "id": "dest-santorini-dusk",
+      "label": "2. Santorini Dusk",
+      "lineage": "cinematic luxury travel sites",
+      "thesis": "Dark and cinematic: one full-screen destination at blue hour, a fine serif headline and a slim glass enquiry bar.",
+      "palette": ["#0C1626", "#E9E2D3", "#B89B6A", "#1B2A44"],
+      "materials": ["full-bleed dusk photography", "fine serif", "dark glass bar"],
+      "viewport": "Santorini at dusk fills the screen; headline in the dark space at left; glass enquiry bar along the bottom.",
+      "risk": "Dark with a champagne accent sits close to the navy-and-gold habit of Dubai agencies.",
+      "comp": ".impeccable/mocks/decision/r3-santorini-dusk.png"
+    },
+    {
+      "id": "dest-atlas-mosaic",
+      "label": "3. Atlas Mosaic",
+      "lineage": "private-bank and premium corporate sites",
+      "thesis": "Bright and corporate: white, deep navy type, and a tidy mosaic of six destinations.",
+      "palette": ["#FFFFFF", "#0B2A4A", "#5B8DB8", "#E8EEF5"],
+      "materials": ["six-photo mosaic", "modern grotesque type", "white service bar"],
+      "viewport": "Navy headline at left; Dubai, Paris, Istanbul, Maldives, London and Makkah in a mosaic at right; five services along the bottom.",
+      "risk": "Clean and safe; the least distinctive mood of the set.",
+      "comp": ".impeccable/mocks/decision/r3-atlas-mosaic.png"
+    },
+    {
+      "id": "dest-gallery-wall",
+      "label": "4. Gallery Wall",
+      "lineage": "boutique travel designers",
+      "thesis": "Warm and layered: destination photographs overlapping like fine prints, with real depth and a light sans.",
+      "palette": ["#ECE9E4", "#22252A", "#0F4C5C", "#FFFFFF"],
+      "materials": ["overlapping white-bordered prints", "soft shadows", "deep teal"],
+      "viewport": "Light headline at left; four overlapping prints at right (Alps, Istanbul, Bali, Dubai); a white enquiry bar along the bottom.",
+      "risk": "The layered prints need care on phones, where they must stack cleanly.",
+      "comp": ".impeccable/mocks/decision/r3-gallery-wall.png"
+    },
+    {
+      "id": "dest-emerald-journey",
+      "label": "5. Emerald Journey",
+      "lineage": "members' club sites",
+      "thesis": "A solid deep-emerald panel with cream serif type beside a full-height destination photograph, joined by the enquiry card.",
+      "palette": ["#0F3B2E", "#F2EBDD", "#C2A36B", "#12211C"],
+      "materials": ["solid emerald field", "full-height photograph", "cream card with brass line"],
+      "viewport": "Left half emerald with the headline in cream; right half the Amalfi Coast; a cream enquiry card straddles the seam.",
+      "risk": "Green and brass is rich and distinctive, but leans club-like rather than corporate.",
+      "comp": ".impeccable/mocks/decision/r3-emerald-journey.png"
+    },
+    {
+      "id": "dest-lagoon-glass",
+      "label": "6. Lagoon Glass",
+      "lineage": "premium resort and airline-holiday sites",
+      "thesis": "Bright and fresh: a Maldives lagoon from above, sapphire type and a frosted-glass enquiry card.",
+      "palette": ["#FFFFFF", "#0B2A4A", "#39B7C4", "#E8F4F6"],
+      "materials": ["aerial lagoon photography", "frosted glass", "white service bar"],
+      "viewport": "Turquoise lagoon fills the screen; navy headline at left; glass enquiry card at right; five services along the bottom.",
+      "risk": "Reads strongly as holidays; visas and paperwork need the copy to carry them.",
+      "comp": ".impeccable/mocks/decision/r3-lagoon-glass.png"
+    },
+    {
+      "id": "dest-golden-hour",
+      "label": "7. Golden Hour",
+      "lineage": "destination and heritage tourism sites",
+      "thesis": "Warm and open: a landmark at sunrise under a huge calm sky, a centred light headline and one floating enquiry bar.",
+      "palette": ["#F3E7D3", "#1D1A16", "#B8763A", "#FFFFFF"],
+      "materials": ["full-bleed sunrise photography", "light sans display", "white floating bar"],
+      "viewport": "The Taj Mahal at sunrise in the lower half; the headline centred in the sky; a white enquiry bar floating at the bottom.",
+      "risk": "One landmark sets the whole tone; the image would rotate between destinations.",
+      "comp": ".impeccable/mocks/decision/r3-golden-hour.png"
+    },
+    {
+      "id": "dest-monochrome",
+      "label": "8. Monochrome",
+      "lineage": "fashion-house and gallery sites",
+      "thesis": "Black, white and nothing else: an oversized serif headline edge to edge and black-and-white destination photography.",
+      "palette": ["#FFFFFF", "#0B0B0B", "#8C8C8C", "#7A1F1F"],
+      "materials": ["black-and-white photography", "oversized serif", "strict grid"],
+      "viewport": "Headline across the full width; beneath it the Eiffel Tower in black and white, a text column, and a quiet list of services.",
+      "risk": "Severe and fashion-led; some visitors may find it cold for a service desk.",
+      "comp": ".impeccable/mocks/decision/r3-monochrome.png"
+    },
+    {
+      "id": "dest-panorama",
+      "label": "9. Panorama",
+      "lineage": "full-service corporate travel sites",
+      "thesis": "Polished corporate: a strip of five destinations side by side, then headline and a six-service index on oyster grey with burgundy.",
+      "palette": ["#EEEBE6", "#5C0F2B", "#1B1B1F", "#FFFFFF"],
+      "materials": ["five-destination strip", "oyster grey", "burgundy accents", "service index"],
+      "viewport": "Dubai, Istanbul, Paris, Maldives and Makkah as five tall slices across the top; headline at left and six services at right below.",
+      "risk": "Burgundy and grey will remind some people of a well-known Gulf airline.",
+      "comp": ".impeccable/mocks/decision/r3-panorama.png"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "comp", "toggle": true },
+  "canon": false,
+  "steer": true
+}

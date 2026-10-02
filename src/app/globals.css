@@ -1,0 +1,796 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ground: #ebe7e2;
+  --color-paper: #ffffff;
+  --color-ink: #171b24;
+  --color-ink-soft: #5e6167;
+  --color-burgundy: #640b2c;
+  --color-burgundy-deep: #4a0820;
+  --color-blush: #f4c9d4;
+  --color-rule: #c9c5bf;
+  --color-alert: #ffd0d9;
+
+  --font-display: var(--font-wix-display), var(--font-alexandria), system-ui, sans-serif;
+  --font-sans: var(--font-wix-text), var(--font-noto-arabic), system-ui, sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  /*
+   * Content sits in a centred column at most 1200px wide. The gutter is the
+   * least space kept between that column and the screen edge on smaller
+   * screens: 20px on a phone, up to 52px.
+   */
+  --container: 75rem;
+  --gutter: clamp(1.25rem, 3.61vw, 3.25rem);
+  --header-height: 4.3125rem;
+}
+
+@layer base {
+  html {
+    background: var(--color-ground);
+    color: var(--color-ink);
+    scroll-padding-top: calc(var(--header-height) + 1rem);
+    -webkit-text-size-adjust: 100%;
+    scrollbar-color: var(--color-burgundy) var(--color-ground);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-variant-numeric: lining-nums;
+    caret-color: var(--color-burgundy);
+  }
+
+  /*
+   * Arabic text asks for the Arabic faces first. Without this the Latin
+   * faces' metric fallback (Arial) would claim the Arabic glyphs.
+   * Arabic also never takes letter-spacing: tracking breaks the joins.
+   */
+  :lang(ar) {
+    --font-display: var(--font-alexandria), var(--font-wix-display), system-ui, sans-serif;
+    --font-sans: var(--font-noto-arabic), var(--font-wix-text), system-ui, sans-serif;
+    letter-spacing: 0 !important;
+  }
+
+  :lang(en) {
+    --font-display: var(--font-wix-display), var(--font-alexandria), system-ui, sans-serif;
+    --font-sans: var(--font-wix-text), var(--font-noto-arabic), system-ui, sans-serif;
+  }
+
+  html:lang(ar) body {
+    line-height: 1.9;
+  }
+
+  /* Arabic display type needs room for its marks above and below the line. */
+  :lang(ar) :is(.headline, .section-title) {
+    line-height: 1.4;
+  }
+
+  /* A run of text in the other language (the language link) picks up that language's faces. */
+  :where([lang]) {
+    font-family: var(--font-sans);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-burgundy);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-burgundy);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  a {
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: 1px;
+  }
+}
+
+@layer components {
+  .shell {
+    width: 100%;
+    max-width: calc(var(--container) + 2 * var(--gutter));
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  /* Display type. 32px on a phone, 50px from a 1520px screen up. */
+  .headline {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 1.611rem + 1.595vw, 3.125rem);
+    font-weight: 700;
+    line-height: 1.137;
+    letter-spacing: -0.005em;
+    text-wrap: wrap;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 1.4rem + 1.1vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  .lede {
+    font-size: 1.0625rem;
+    line-height: 1.64;
+  }
+
+  /* Pill buttons: the primary action, filled burgundy. */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.4375rem;
+    padding-inline: 2.3125rem;
+    border-radius: 999px;
+    background: var(--color-burgundy);
+    color: var(--color-paper);
+    font-family: var(--font-display);
+    font-size: 0.96875rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    transition: background-color 200ms var(--ease-out-expo), transform 200ms var(--ease-out-expo);
+  }
+
+  .pill:hover {
+    background: var(--color-burgundy-deep);
+  }
+
+  .pill:active {
+    transform: scale(0.98);
+  }
+
+  .pill:focus-visible {
+    border-radius: 999px;
+  }
+
+  .pill-small {
+    min-height: 2.3125rem;
+    padding-inline: 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .pill[aria-disabled="true"],
+  .pill:disabled {
+    background: var(--color-ink-soft);
+    cursor: not-allowed;
+  }
+
+  .text-link {
+    font-family: var(--font-display);
+    font-size: 0.953125rem;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 200ms var(--ease-out-expo);
+  }
+
+  .text-link:hover {
+    color: var(--color-burgundy);
+  }
+
+  /*
+   * The destination strip. Five photographs share one row; the middle one
+   * leads. Pointing at (or tabbing to) a photograph hands it the lead.
+   */
+  .strip {
+    display: flex;
+    gap: 0.5rem;
+    height: clamp(15rem, 21.875vw, 20.5rem);
+  }
+
+  /*
+   * A strip that stands on its own sits in the centred column like everything
+   * else. On phones it runs edge to edge so it can be swiped.
+   */
+  @media (min-width: 768px) {
+    .strip-frame {
+      width: 100%;
+      max-width: calc(var(--container) + 2 * var(--gutter));
+      margin-inline: auto;
+      padding-inline: var(--gutter);
+      padding-top: 1.75rem;
+    }
+  }
+
+  .strip-slice {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    overflow: hidden;
+    background: var(--color-ink);
+    transition: flex-grow 700ms var(--ease-out-expo);
+  }
+
+  .strip-slice[data-lead="true"] {
+    flex-grow: 1.64;
+  }
+
+  .strip:not(.strip-static):has(.strip-slice:hover, .strip-slice:focus-within) .strip-slice {
+    flex-grow: 1;
+  }
+
+  .strip:not(.strip-static):has(.strip-slice:hover, .strip-slice:focus-within) .strip-slice:is(:hover, :focus-within) {
+    flex-grow: 1.64;
+  }
+
+  .strip-static .strip-slice {
+    transition: none;
+  }
+
+  .strip-link {
+    position: absolute;
+    inset: 0;
+    display: block;
+    color: var(--color-paper);
+  }
+
+  .strip-link:focus-visible {
+    outline-offset: -4px;
+    outline-color: var(--color-paper);
+  }
+
+  .strip-link img {
+    object-fit: cover;
+  }
+
+  /* A soft floor of shade so the white place name reads on bright water and sky. */
+  .strip-link::after,
+  .photo-captioned::after {
+    content: "";
+    position: absolute;
+    inset: 64% 0 0 0;
+    background: linear-gradient(to top, rgb(10 12 18 / 0.76), rgb(10 12 18 / 0.62) 32%, rgb(10 12 18 / 0));
+    pointer-events: none;
+  }
+
+  .photo-captioned {
+    color: var(--color-paper);
+  }
+
+  .strip-caption {
+    position: absolute;
+    z-index: 1;
+    inset-inline-start: 0.78125rem;
+    inset-block-end: 0.6875rem;
+    display: grid;
+    font-family: var(--font-display);
+    line-height: 1.2;
+  }
+
+  :lang(ar) .strip-caption {
+    line-height: 1.5;
+  }
+
+  .strip-name {
+    font-size: 1.1875rem;
+    font-weight: 500;
+  }
+
+  .strip-note {
+    margin-top: 0.1875rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  /*
+   * With a pointer, the service line appears only for the photograph in hand:
+   * the place name steps up and the line fades in beneath it.
+   */
+  @media (hover: hover) {
+    .strip-name {
+      transition: translate 500ms var(--ease-out-expo);
+    }
+
+    .strip-note {
+      position: absolute;
+      inset-inline-start: 0;
+      inset-block-end: 0;
+      margin-top: 0;
+      opacity: 0;
+      translate: 0 0.375rem;
+      transition:
+        opacity 300ms var(--ease-out-expo),
+        translate 500ms var(--ease-out-expo);
+    }
+
+    .strip:not(.strip-static) .strip-slice:is(:hover, :focus-within) .strip-name {
+      translate: 0 -1.4375rem;
+    }
+
+    .strip-slice:is(:hover, :focus-within) .strip-note {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  /* On narrow screens the strip becomes a row you swipe, one photograph at a time. */
+  @media (max-width: 767px) {
+    .strip {
+      height: 62vw;
+      min-height: 15rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+    }
+
+    .strip-slice,
+    .strip-slice[data-lead="true"] {
+      flex: 0 0 72%;
+      scroll-snap-align: start;
+    }
+  }
+
+  /* The service index: titles on hairlines, a chevron that leans in when pointed at. */
+  .svc-index {
+    display: grid;
+    column-gap: 2.5rem;
+  }
+
+  .svc-index > li + li {
+    border-top: 1px solid var(--color-rule);
+  }
+
+  @media (min-width: 640px) {
+    .svc-index {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .svc-index > li:nth-child(2) {
+      border-top: 0;
+    }
+  }
+
+  .svc {
+    position: relative;
+    display: grid;
+    gap: 0.375rem;
+    padding-block: 1.5625rem 2.4375rem;
+    padding-inline-end: 2rem;
+  }
+
+  .svc-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 1.6vw, 1.4375rem);
+    font-weight: 600;
+    line-height: 1.22;
+    transition: color 200ms var(--ease-out-expo);
+  }
+
+  .svc-short {
+    color: var(--color-ink-soft);
+    font-size: 0.875rem;
+    line-height: 1.45;
+  }
+
+  .svc-chevron {
+    position: absolute;
+    inset-inline-end: 0;
+    top: 2.25rem;
+    color: var(--color-burgundy);
+    transition: translate 300ms var(--ease-out-expo);
+  }
+
+  .svc:hover .svc-title {
+    color: var(--color-burgundy);
+  }
+
+  .svc:hover .svc-chevron {
+    translate: 0.25rem 0;
+  }
+
+  [dir="rtl"] .svc-chevron {
+    scale: -1 1;
+  }
+
+  [dir="rtl"] .svc:hover .svc-chevron {
+    translate: -0.25rem 0;
+  }
+}
+
+@layer components {
+  /* Vertical rhythm: one spacing step for every section. */
+  .section {
+    padding-block: clamp(4rem, 7.2vw, 7rem);
+  }
+
+  .band-paper {
+    background: var(--color-paper);
+  }
+
+  /* The one drenched field on the site: the place to act. */
+  .band-burgundy {
+    background: var(--color-burgundy);
+    color: var(--color-paper);
+  }
+
+  .band-burgundy ::selection {
+    background: var(--color-paper);
+    color: var(--color-burgundy);
+  }
+
+  .band-burgundy :focus-visible {
+    outline-color: var(--color-paper);
+  }
+
+  .band-burgundy .text-link:hover {
+    color: var(--color-blush);
+  }
+
+  .pill-invert {
+    background: var(--color-paper);
+    color: var(--color-burgundy);
+  }
+
+  .pill-invert:hover {
+    background: var(--color-blush);
+  }
+
+  .subhead {
+    font-family: var(--font-display);
+    font-size: 1.4375rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .prose-measure {
+    max-width: 34rem;
+  }
+
+  /* Rows on hairlines: the grammar of the service index, reused for any list of facts. */
+  .rows > * {
+    border-top: 1px solid var(--color-rule);
+    padding-block: 1.5rem;
+  }
+
+  .rows > *:last-child {
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  .band-burgundy .rows > * {
+    border-color: rgb(255 255 255 / 0.28);
+  }
+
+  /* A checklist marks each item with a short burgundy stroke. */
+  .checklist {
+    max-width: 44rem;
+  }
+
+  .checklist > li {
+    position: relative;
+    padding-block: 0.875rem;
+    padding-inline-start: 2rem;
+    border-top: 1px solid var(--color-rule);
+  }
+
+  .checklist > li:last-child {
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  .checklist > li::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    top: 1.75rem;
+    width: 1rem;
+    height: 2px;
+    background: var(--color-burgundy);
+  }
+
+  /* Tabs that choose an errand. */
+  .tab {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1.0625rem;
+    border-top: 1px solid var(--color-rule);
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: start;
+    color: var(--color-ink-soft);
+    transition: color 200ms var(--ease-out-expo);
+  }
+
+  .tab:hover {
+    color: var(--color-ink);
+  }
+
+  .tab[aria-selected="true"] {
+    color: var(--color-burgundy);
+  }
+
+  .tab .tab-chevron {
+    opacity: 0;
+    translate: -0.5rem 0;
+    transition: opacity 300ms var(--ease-out-expo), translate 300ms var(--ease-out-expo);
+  }
+
+  .tab[aria-selected="true"] .tab-chevron {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  [dir="rtl"] .tab .tab-chevron {
+    scale: -1 1;
+    translate: 0.5rem 0;
+  }
+
+  [dir="rtl"] .tab[aria-selected="true"] .tab-chevron {
+    translate: 0 0;
+  }
+
+  .tab-panel {
+    animation: panel-in 500ms var(--ease-out-expo);
+  }
+
+  @keyframes panel-in {
+    from {
+      opacity: 0;
+      translate: 0 0.75rem;
+    }
+  }
+
+  /* Steps are a true sequence, so they are numbered. */
+  .steps {
+    display: grid;
+    gap: 2.5rem 0;
+    counter-reset: step;
+  }
+
+  .steps > li {
+    counter-increment: step;
+    border-top: 1px solid var(--color-rule);
+    padding-top: 1.5rem;
+  }
+
+  .steps > li::before {
+    content: counter(step);
+    display: block;
+    margin-bottom: 1.25rem;
+    font-family: var(--font-display);
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-burgundy);
+  }
+
+  @media (min-width: 640px) {
+    .steps {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 3.4375rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .steps {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  /* Questions open in place. */
+  .faq > details {
+    border-top: 1px solid var(--color-rule);
+  }
+
+  .faq > details:last-child {
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  .faq summary {
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-block: 1.375rem;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.35;
+    transition: color 200ms var(--ease-out-expo);
+  }
+
+  .faq summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq summary:hover {
+    color: var(--color-burgundy);
+  }
+
+  .faq summary svg {
+    flex: none;
+    margin-top: 0.375rem;
+    rotate: 90deg;
+    color: var(--color-burgundy);
+    transition: rotate 300ms var(--ease-out-expo);
+  }
+
+  .faq details[open] summary svg {
+    rotate: -90deg;
+  }
+
+  .faq details > p {
+    max-width: 62ch;
+    padding-bottom: 1.625rem;
+    color: var(--color-ink-soft);
+  }
+
+  /* Form fields on the burgundy band: a label above, a line beneath. */
+  .field {
+    display: grid;
+    gap: 0.375rem;
+  }
+
+  .field > label,
+  .field-label {
+    font-family: var(--font-display);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-blush);
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    width: 100%;
+    min-height: 3rem;
+    border: 0;
+    border-bottom: 1px solid rgb(255 255 255 / 0.5);
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--color-paper);
+    font: inherit;
+    padding-block: 0.625rem;
+    transition: border-color 200ms var(--ease-out-expo), box-shadow 200ms var(--ease-out-expo);
+  }
+
+  .field textarea {
+    min-height: 5.5rem;
+    resize: vertical;
+  }
+
+  .field select {
+    appearance: none;
+    cursor: pointer;
+    padding-inline-end: 2rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' viewBox='0 0 16 9' fill='none'%3E%3Cpath d='M1.25 1.25 8 7.75l6.75-6.5' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.25rem center;
+  }
+
+  [dir="rtl"] .field select {
+    background-position: left 0.25rem center;
+  }
+
+  .field select option {
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  .field ::placeholder {
+    color: rgb(255 255 255 / 0.66);
+  }
+
+  .field input:hover,
+  .field select:hover,
+  .field textarea:hover {
+    border-bottom-color: var(--color-paper);
+  }
+
+  .field input:focus-visible,
+  .field select:focus-visible,
+  .field textarea:focus-visible {
+    outline: 0;
+    border-bottom-color: var(--color-paper);
+    box-shadow: 0 2px 0 0 var(--color-paper);
+  }
+
+  .field [aria-invalid="true"] {
+    border-bottom-color: var(--color-alert);
+    box-shadow: 0 2px 0 0 var(--color-alert);
+  }
+
+  .field-error {
+    font-size: 0.875rem;
+    color: var(--color-alert);
+  }
+
+  /* Photographs keep the strip's language: square corners, no frame. */
+  .photo {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-ink);
+  }
+
+  .photo img {
+    object-fit: cover;
+  }
+
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-ink-soft);
+  }
+
+  .breadcrumb li + li::before {
+    content: "/";
+    margin-inline-end: 0.5rem;
+    color: var(--color-rule);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--color-burgundy);
+  }
+}
+
+/*
+ * The one authored entrance: on load the photographs rise into the strip one
+ * after another and settle. Everything is visible without it, and the
+ * animation lets go when it ends so the photographs are drawn at full quality.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .strip:not([data-quiet]) .strip-slice {
+    animation: slice-rise 1000ms var(--ease-out-expo) backwards;
+    animation-delay: calc(var(--i, 0) * 80ms);
+  }
+
+  .strip:not([data-quiet]) .strip-slice img {
+    animation: photo-settle 1600ms var(--ease-out-expo) backwards;
+    animation-delay: calc(var(--i, 0) * 80ms);
+  }
+
+  @keyframes slice-rise {
+    from {
+      clip-path: inset(100% 0 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  @keyframes photo-settle {
+    from {
+      scale: 1.18;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

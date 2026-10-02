@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-02T00:00:00Z",
+  "title": "Design System: KKN Travels",
+  "extensions": {
+    "colorMeta": {
+      "burgundy": {
+        "role": "primary",
+        "displayName": "Deep Burgundy",
+        "canonical": "oklch(33.1% 0.122 6)",
+        "tonalRamp": [
+          "oklch(15% 0.122 6)",
+          "oklch(26% 0.122 6)",
+          "oklch(38% 0.122 6)",
+          "oklch(49% 0.122 6)",
+          "oklch(61% 0.122 6)",
+          "oklch(72% 0.122 6)",
+          "oklch(84% 0.122 6)",
+          "oklch(95% 0.122 6)"
+        ]
+      },
+      "burgundy-deep": {
+        "role": "primary",
+        "displayName": "Pressed Burgundy",
+        "canonical": "oklch(27.1% 0.097 5)",
+        "tonalRamp": [
+          "oklch(15% 0.097 5)",
+          "oklch(26% 0.097 5)",
+          "oklch(38% 0.097 5)",
+          "oklch(49% 0.097 5)",
+          "oklch(61% 0.097 5)",
+          "oklch(72% 0.097 5)",
+          "oklch(84% 0.097 5)",
+          "oklch(95% 0.097 5)"
+        ]
+      },
+      "blush": {
+        "role": "primary",
+        "displayName": "Blush",
+        "canonical": "oklch(87.6% 0.051 1)",
+        "tonalRamp": [
+          "oklch(15% 0.051 1)",
+          "oklch(26% 0.051 1)",
+          "oklch(38% 0.051 1)",
+          "oklch(49% 0.051 1)",
+          "oklch(61% 0.051 1)",
+          "oklch(72% 0.051 1)",
+          "oklch(84% 0.051 1)",
+          "oklch(95% 0.051 1)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Oyster Grey",
+        "canonical": "oklch(93% 0.008 74)",
+        "tonalRamp": [
+          "oklch(15% 0.008 74)",
+          "oklch(26% 0.008 74)",
+          "oklch(38% 0.008 74)",
+          "oklch(49% 0.008 74)",
+          "oklch(61% 0.008 74)",
+          "oklch(72% 0.008 74)",
+          "oklch(84% 0.008 74)",
+          "oklch(95% 0.008 74)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Charcoal Ink",
+        "canonical": "oklch(22.2% 0.019 266)",
+        "tonalRamp": [
+          "oklch(15% 0.019 266)",
+          "oklch(26% 0.019 266)",
+          "oklch(38% 0.019 266)",
+          "oklch(49% 0.019 266)",
+          "oklch(61% 0.019 266)",
+          "oklch(72% 0.019 266)",
+          "oklch(84% 0.019 266)",
+          "oklch(95% 0.019 266)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Charcoal",
+        "canonical": "oklch(49.2% 0.01 264)",
+        "tonalRamp": [
+          "oklch(15% 0.01 264)",
+          "oklch(26% 0.01 264)",
+          "oklch(38% 0.01 264)",
+          "oklch(49% 0.01 264)",
+          "oklch(61% 0.01 264)",
+          "oklch(72% 0.01 264)",
+          "oklch(84% 0.01 264)",
+          "oklch(95% 0.01 264)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(82.5% 0.009 78)",
+        "tonalRamp": [
+          "oklch(15% 0.009 78)",
+          "oklch(26% 0.009 78)",
+          "oklch(38% 0.009 78)",
+          "oklch(49% 0.009 78)",
+          "oklch(61% 0.009 78)",
+          "oklch(72% 0.009 78)",
+          "oklch(84% 0.009 78)",
+          "oklch(95% 0.009 78)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The page headline. One per page; grows with the screen past 1440px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles, one per section."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Subheads inside a section: step titles, audience names, fact names."
+      },
+      "index-title": {
+        "displayName": "Index title",
+        "purpose": "Service names in the service index."
+      },
+      "row-title": {
+        "displayName": "Row title",
+        "purpose": "Tabs, questions and mobile menu links."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Burgundy step numbers only."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "The business name in burgundy, in the navigation band and the footer."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The one paragraph under a page headline."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, with capped measures."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Breadcrumbs, the footer legal line, form notes and error messages."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "White place names on photographs."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Pill labels."
+      },
+      "link": {
+        "displayName": "Link",
+        "purpose": "Standalone underlined text links."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation links, field labels and footer column headings."
+      }
+    },
+    "shadows": [
+      {
+        "name": "menu-overlay",
+        "value": "0 24px 40px -24px rgb(23 27 36 / 0.35)",
+        "purpose": "Under the mobile menu panel only, where it drops over the page. The one true shadow in the build."
+      },
+      {
+        "name": "field-focus-line",
+        "value": "0 2px 0 0 #ffffff",
+        "purpose": "Not elevation: thickens the underline of a focused form field on the burgundy band."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only easing. Used for every transition and for the strip entrance."
+      },
+      {
+        "name": "state",
+        "value": "200ms",
+        "purpose": "Colour changes on hover: links, pills, row titles, field lines."
+      },
+      {
+        "name": "chevron",
+        "value": "300ms",
+        "purpose": "Chevron lean, tab chevron slide-in, question chevron turn, strip service line fade."
+      },
+      {
+        "name": "caption-step",
+        "value": "500ms",
+        "purpose": "The place name stepping up on a pointed-at photograph, and a tab panel fading up 12px."
+      },
+      {
+        "name": "strip-lead",
+        "value": "700ms",
+        "purpose": "A photograph taking or giving up the lead width (flex-grow 1 to 1.64)."
+      },
+      {
+        "name": "slice-rise",
+        "value": "1000ms, 80ms stagger",
+        "purpose": "The one authored entrance: each strip slice is revealed from the bottom on load."
+      },
+      {
+        "name": "photo-settle",
+        "value": "1600ms, 80ms stagger",
+        "purpose": "Each photograph settles from 1.18 scale while its slice rises."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "Under prefers-reduced-motion every animation and transition is cut to nothing; all content is visible without it."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Pill button",
+      "kind": "button",
+      "refersTo": "pill",
+      "description": "The one filled action per view: burgundy pill, white label. Shown with the text link that sits beside it and the small navigation size.",
+      "html": "<div class=\"ds-pill-row\"><a class=\"ds-pill\" href=\"#\">Start on WhatsApp</a><a class=\"ds-text-link\" href=\"#\">Call +971 4 000 0000</a><a class=\"ds-pill ds-pill-small\" href=\"#\">WhatsApp us</a></div>",
+      "css": ".ds-pill-row { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2.6875rem; } .ds-pill { display: inline-flex; align-items: center; justify-content: center; min-height: 3.4375rem; padding-inline: 2.3125rem; border-radius: 999px; background: var(--color-burgundy, #640b2c); color: var(--color-paper, #ffffff); font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 0.96875rem; font-weight: 600; line-height: 1; white-space: nowrap; text-decoration: none; border: 0; cursor: pointer; transition: background-color 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)), transform 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-pill:hover { background: var(--color-burgundy-deep, #4a0820); } .ds-pill:active { transform: scale(0.98); } .ds-pill:focus-visible { outline: 2px solid var(--color-burgundy, #640b2c); outline-offset: 3px; } .ds-pill-small { min-height: 2.3125rem; padding-inline: 1.25rem; font-size: 0.875rem; } .ds-pill[aria-disabled='true'] { background: var(--color-ink-soft, #5e6167); cursor: not-allowed; } .ds-text-link { font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 0.953125rem; font-weight: 500; color: var(--color-ink, #171b24); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.3em; transition: color 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-text-link:hover { color: var(--color-burgundy, #640b2c); } .ds-text-link:focus-visible { outline: 2px solid var(--color-burgundy, #640b2c); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Text link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "The second action and every standalone link: underlined display text that turns burgundy on hover.",
+      "html": "<a class=\"ds-text-link\" href=\"#\">Read the full guide</a>",
+      "css": ".ds-text-link { font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 0.953125rem; font-weight: 500; color: var(--color-ink, #171b24); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.3em; transition: color 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-text-link:hover { color: var(--color-burgundy, #640b2c); } .ds-text-link:focus-visible { outline: 2px solid var(--color-burgundy, #640b2c); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Navigation band",
+      "kind": "nav",
+      "refersTo": "nav-band",
+      "description": "White 69px band: burgundy wordmark, centred service links, the language link and a small pill.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-nav-mark\" href=\"#\">KKN Travels</a><nav><ul class=\"ds-nav-links\"><li><a href=\"#\">Visas</a></li><li><a href=\"#\">Visas abroad</a></li><li><a href=\"#\">Flights</a></li><li><a href=\"#\">Typing</a></li><li><a href=\"#\">Holidays</a></li></ul></nav><div class=\"ds-nav-end\"><a class=\"ds-nav-lang\" href=\"#\" lang=\"ar\">العربية</a><a class=\"ds-pill ds-pill-small\" href=\"#\">WhatsApp us</a></div></header>",
+      "css": ".ds-nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 4.3125rem; padding-inline: 2.75rem 2.25rem; background: var(--color-paper, #ffffff); color: var(--color-ink, #171b24); } .ds-nav-mark { font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 2.0625rem; font-weight: 600; line-height: 1; letter-spacing: -0.02em; white-space: nowrap; color: var(--color-burgundy, #640b2c); text-decoration: none; } .ds-nav-links { display: flex; gap: 2.6875rem; margin: 0; padding: 0; list-style: none; font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 0.875rem; font-weight: 500; } .ds-nav-links a, .ds-nav-lang { color: inherit; text-decoration: none; transition: color 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-nav-links a:hover, .ds-nav-lang:hover { color: var(--color-burgundy, #640b2c); } .ds-nav a:focus-visible { outline: 2px solid var(--color-burgundy, #640b2c); outline-offset: 3px; border-radius: 2px; } .ds-nav-end { display: flex; align-items: center; justify-self: end; gap: 2.125rem; font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 0.875rem; font-weight: 500; } .ds-pill { display: inline-flex; align-items: center; justify-content: center; min-height: 3.4375rem; padding-inline: 2.3125rem; border-radius: 999px; background: var(--color-burgundy, #640b2c); color: var(--color-paper, #ffffff); font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 0.96875rem; font-weight: 600; line-height: 1; white-space: nowrap; text-decoration: none; border: 0; cursor: pointer; transition: background-color 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)), transform 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-pill:hover { background: var(--color-burgundy-deep, #4a0820); } .ds-pill:active { transform: scale(0.98); } .ds-pill:focus-visible { outline: 2px solid var(--color-burgundy, #640b2c); outline-offset: 3px; } .ds-pill-small { min-height: 2.3125rem; padding-inline: 1.25rem; font-size: 0.875rem; } .ds-pill[aria-disabled='true'] { background: var(--color-ink-soft, #5e6167); cursor: not-allowed; }"
+    },
+    {
+      "name": "Destination strip",
+      "kind": "custom",
+      "refersTo": "strip-slice",
+      "description": "The signature: five square-cornered photographs on white gaps. The one under the pointer or focus takes the lead width and names its service.",
+      "html": "<ul class=\"ds-strip\"><li class=\"ds-strip-slice ds-strip-dubai\"><a class=\"ds-strip-link\" href=\"#\"><span class=\"ds-strip-caption\"><span class=\"ds-strip-name\">Dubai</span><span class=\"ds-strip-note\">Visit and residence visas</span></span></a></li><li class=\"ds-strip-slice ds-strip-istanbul\"><a class=\"ds-strip-link\" href=\"#\"><span class=\"ds-strip-caption\"><span class=\"ds-strip-name\">Istanbul</span><span class=\"ds-strip-note\">Flight tickets</span></span></a></li><li class=\"ds-strip-slice ds-strip-paris\" data-lead=\"true\"><a class=\"ds-strip-link\" href=\"#\"><span class=\"ds-strip-caption\"><span class=\"ds-strip-name\">Paris</span><span class=\"ds-strip-note\">Visas for travel abroad</span></span></a></li><li class=\"ds-strip-slice ds-strip-maldives\"><a class=\"ds-strip-link\" href=\"#\"><span class=\"ds-strip-caption\"><span class=\"ds-strip-name\">Maldives</span><span class=\"ds-strip-note\">Holidays and Umrah</span></span></a></li><li class=\"ds-strip-slice ds-strip-makkah\"><a class=\"ds-strip-link\" href=\"#\"><span class=\"ds-strip-caption\"><span class=\"ds-strip-name\">Makkah</span><span class=\"ds-strip-note\">Holidays and Umrah</span></span></a></li></ul>",
+      "css": ".ds-strip { display: flex; gap: 0.5rem; height: 15rem; margin: 0; padding: 0; list-style: none; background: var(--color-paper, #ffffff); } .ds-strip-slice { position: relative; flex: 1 1 0; min-width: 0; overflow: hidden; background-color: var(--color-ink, #171b24); background-size: cover; background-position: center; transition: flex-grow 700ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-strip-dubai { background-image: url('/images/destinations/dubai.jpg'); } .ds-strip-istanbul { background-image: url('/images/destinations/istanbul.jpg'); } .ds-strip-paris { background-image: url('/images/destinations/paris.jpg'); } .ds-strip-maldives { background-image: url('/images/destinations/maldives.jpg'); } .ds-strip-makkah { background-image: url('/images/destinations/makkah.jpg'); } .ds-strip-slice[data-lead='true'] { flex-grow: 1.64; } .ds-strip:has(.ds-strip-slice:hover, .ds-strip-slice:focus-within) .ds-strip-slice { flex-grow: 1; } .ds-strip:has(.ds-strip-slice:hover, .ds-strip-slice:focus-within) .ds-strip-slice:is(:hover, :focus-within) { flex-grow: 1.64; } .ds-strip-link { position: absolute; inset: 0; display: block; color: var(--color-paper, #ffffff); text-decoration: none; } .ds-strip-link:focus-visible { outline: 2px solid var(--color-paper, #ffffff); outline-offset: -4px; } .ds-strip-link::after { content: ''; position: absolute; inset: 64% 0 0 0; background: linear-gradient(to top, rgb(10 12 18 / 0.76), rgb(10 12 18 / 0.62) 32%, rgb(10 12 18 / 0)); pointer-events: none; } .ds-strip-caption { position: absolute; z-index: 1; inset-inline-start: 0.78125rem; inset-block-end: 0.6875rem; display: grid; font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); line-height: 1.2; } .ds-strip-name { font-size: 1.1875rem; font-weight: 500; transition: translate 500ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-strip-note { position: absolute; inset-inline-start: 0; inset-block-end: 0; font-size: 0.875rem; font-weight: 400; white-space: nowrap; opacity: 0; translate: 0 0.375rem; transition: opacity 300ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)), translate 500ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-strip-slice:is(:hover, :focus-within) .ds-strip-name { translate: 0 -1.4375rem; } .ds-strip-slice:is(:hover, :focus-within) .ds-strip-note { opacity: 1; translate: 0 0; }"
+    },
+    {
+      "name": "Service index",
+      "kind": "nav",
+      "refersTo": "index-row",
+      "description": "Every service as a title on a hairline, two columns wide, with a burgundy chevron that leans in on hover.",
+      "html": "<ul class=\"ds-svc-index\"><li><a class=\"ds-svc\" href=\"#\"><span class=\"ds-svc-title\">Visas</span><span class=\"ds-svc-short\">Visit, family and residence</span><svg class=\"ds-svc-chevron\" width=\"9\" height=\"16\" viewBox=\"0 0 9 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1.25 1.25 7.75 8l-6.5 6.75\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></li><li><a class=\"ds-svc\" href=\"#\"><span class=\"ds-svc-title\">Visas abroad</span><span class=\"ds-svc-short\">Schengen, UK, US and more</span><svg class=\"ds-svc-chevron\" width=\"9\" height=\"16\" viewBox=\"0 0 9 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1.25 1.25 7.75 8l-6.5 6.75\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></li><li><a class=\"ds-svc\" href=\"#\"><span class=\"ds-svc-title\">Flights</span><span class=\"ds-svc-short\">Any airline, any route</span><svg class=\"ds-svc-chevron\" width=\"9\" height=\"16\" viewBox=\"0 0 9 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1.25 1.25 7.75 8l-6.5 6.75\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></li><li><a class=\"ds-svc\" href=\"#\"><span class=\"ds-svc-title\">Typing</span><span class=\"ds-svc-short\">Government applications</span><svg class=\"ds-svc-chevron\" width=\"9\" height=\"16\" viewBox=\"0 0 9 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1.25 1.25 7.75 8l-6.5 6.75\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></li></ul>",
+      "css": ".ds-svc-index { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3.4375rem; margin: 0; padding: 0; list-style: none; color: var(--color-ink, #171b24); } .ds-svc-index > li + li { border-top: 1px solid var(--color-rule, #c9c5bf); } .ds-svc-index > li:nth-child(2) { border-top: 0; } .ds-svc { position: relative; display: grid; gap: 0.375rem; padding-block: 1.5625rem 2.4375rem; padding-inline-end: 2rem; color: inherit; text-decoration: none; } .ds-svc-title { font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: clamp(1.25rem, 1.6vw, 1.875rem); font-weight: 600; line-height: 1.75rem; transition: color 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-svc-short { font-family: var(--font-sans, 'Wix Madefor Text', system-ui, sans-serif); color: var(--color-ink-soft, #5e6167); font-size: clamp(0.875rem, 0.972vw, 1.0625rem); line-height: 1.45; } .ds-svc-chevron { position: absolute; inset-inline-end: 0; top: 2.25rem; color: var(--color-burgundy, #640b2c); transition: translate 300ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-svc:hover .ds-svc-title { color: var(--color-burgundy, #640b2c); } .ds-svc:hover .ds-svc-chevron { translate: 0.25rem 0; } .ds-svc:focus-visible { outline: 2px solid var(--color-burgundy, #640b2c); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Errand tabs",
+      "kind": "custom",
+      "refersTo": "tab",
+      "description": "A vertical list of choices on hairlines; the selected one turns burgundy and shows the chevron.",
+      "html": "<div class=\"ds-tablist\" role=\"tablist\" aria-orientation=\"vertical\"><button class=\"ds-tab\" type=\"button\" role=\"tab\" aria-selected=\"true\">Visas<svg class=\"ds-tab-chevron\" width=\"9\" height=\"16\" viewBox=\"0 0 9 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1.25 1.25 7.75 8l-6.5 6.75\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button><button class=\"ds-tab\" type=\"button\" role=\"tab\" aria-selected=\"false\">Visas abroad<svg class=\"ds-tab-chevron\" width=\"9\" height=\"16\" viewBox=\"0 0 9 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1.25 1.25 7.75 8l-6.5 6.75\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button><button class=\"ds-tab\" type=\"button\" role=\"tab\" aria-selected=\"false\">Flights<svg class=\"ds-tab-chevron\" width=\"9\" height=\"16\" viewBox=\"0 0 9 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1.25 1.25 7.75 8l-6.5 6.75\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button></div>",
+      "css": ".ds-tablist { max-width: 28rem; border-bottom: 1px solid var(--color-rule, #c9c5bf); } .ds-tab { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.0625rem 0; border: 0; border-top: 1px solid var(--color-rule, #c9c5bf); background: transparent; font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 1.25rem; font-weight: 600; text-align: start; color: var(--color-ink-soft, #5e6167); cursor: pointer; transition: color 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-tab:hover { color: var(--color-ink, #171b24); } .ds-tab[aria-selected='true'] { color: var(--color-burgundy, #640b2c); } .ds-tab:focus-visible { outline: 2px solid var(--color-burgundy, #640b2c); outline-offset: 3px; border-radius: 2px; } .ds-tab-chevron { opacity: 0; translate: -0.5rem 0; transition: opacity 300ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)), translate 300ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-tab[aria-selected='true'] .ds-tab-chevron { opacity: 1; translate: 0 0; }"
+    },
+    {
+      "name": "Checklist",
+      "kind": "custom",
+      "description": "What to bring: items on hairlines, each started by a short burgundy stroke.",
+      "html": "<ul class=\"ds-checklist\"><li>A clear colour copy of the passport, valid for at least six months</li><li>A recent passport-size photo with a white background</li><li>Travel dates, if you already know them</li></ul>",
+      "css": ".ds-checklist { max-width: 44rem; margin: 0; padding: 0; list-style: none; font-family: var(--font-sans, 'Wix Madefor Text', system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.65; color: var(--color-ink, #171b24); } .ds-checklist > li { position: relative; padding-block: 0.875rem; padding-inline-start: 2rem; border-top: 1px solid var(--color-rule, #c9c5bf); } .ds-checklist > li:last-child { border-bottom: 1px solid var(--color-rule, #c9c5bf); } .ds-checklist > li::before { content: ''; position: absolute; inset-inline-start: 0; top: 1.75rem; width: 1rem; height: 2px; background: var(--color-burgundy, #640b2c); }"
+    },
+    {
+      "name": "Numbered steps",
+      "kind": "custom",
+      "description": "A true sequence: a large burgundy numeral over a title and a short line, each step on its own hairline.",
+      "html": "<ol class=\"ds-steps\"><li><h3 class=\"ds-subhead\">Tell us the errand</h3><p>On WhatsApp, by phone or at the desk.</p></li><li><h3 class=\"ds-subhead\">Send the documents</h3><p>We check them first and tell you if anything is missing.</p></li><li><h3 class=\"ds-subhead\">We do the work</h3><p>You get a price in writing before you pay.</p></li></ol>",
+      "css": ".ds-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 3.4375rem; margin: 0; padding: 0; list-style: none; counter-reset: ds-step; color: var(--color-ink, #171b24); } .ds-steps > li { counter-increment: ds-step; border-top: 1px solid var(--color-rule, #c9c5bf); padding-top: 1.5rem; } .ds-steps > li::before { content: counter(ds-step); display: block; margin-bottom: 1.25rem; font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 3.25rem; font-weight: 700; line-height: 1; color: var(--color-burgundy, #640b2c); } .ds-subhead { margin: 0; font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 1.4375rem; font-weight: 600; line-height: 1.25; } .ds-steps p { max-width: 34ch; margin: 0.5rem 0 0; font-family: var(--font-sans, 'Wix Madefor Text', system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.65; color: var(--color-ink-soft, #5e6167); }"
+    },
+    {
+      "name": "Questions",
+      "kind": "custom",
+      "description": "Native disclosure rows on hairlines; the chevron points down when closed and up when open.",
+      "html": "<div class=\"ds-faq\"><details open><summary>Do I have to come to the office?<svg class=\"ds-faq-chevron\" width=\"9\" height=\"16\" viewBox=\"0 0 9 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1.25 1.25 7.75 8l-6.5 6.75\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></summary><p>No. Most errands start on WhatsApp with photos of the documents.</p></details><details><summary>How do I know the price?<svg class=\"ds-faq-chevron\" width=\"9\" height=\"16\" viewBox=\"0 0 9 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1.25 1.25 7.75 8l-6.5 6.75\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></summary><p>You get the figure in writing before you pay.</p></details></div>",
+      "css": ".ds-faq { color: var(--color-ink, #171b24); } .ds-faq > details { border-top: 1px solid var(--color-rule, #c9c5bf); } .ds-faq > details:last-child { border-bottom: 1px solid var(--color-rule, #c9c5bf); } .ds-faq summary { display: flex; cursor: pointer; list-style: none; align-items: flex-start; justify-content: space-between; gap: 1.5rem; padding-block: 1.375rem; font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 1.25rem; font-weight: 600; line-height: 1.35; transition: color 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-faq summary::-webkit-details-marker { display: none; } .ds-faq summary:hover { color: var(--color-burgundy, #640b2c); } .ds-faq summary:focus-visible { outline: 2px solid var(--color-burgundy, #640b2c); outline-offset: 3px; border-radius: 2px; } .ds-faq-chevron { flex: none; margin-top: 0.375rem; rotate: 90deg; color: var(--color-burgundy, #640b2c); transition: rotate 300ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-faq details[open] .ds-faq-chevron { rotate: -90deg; } .ds-faq details > p { max-width: 62ch; margin: 0; padding-bottom: 1.625rem; font-family: var(--font-sans, 'Wix Madefor Text', system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.65; color: var(--color-ink-soft, #5e6167); }"
+    },
+    {
+      "name": "Enquiry band",
+      "kind": "input",
+      "refersTo": "enquiry-band",
+      "description": "The one burgundy field: line-only form fields with blush labels and the inverted pill.",
+      "html": "<form class=\"ds-band\"><h2 class=\"ds-band-title\">Tell us what you need</h2><div class=\"ds-field\"><label for=\"ds-name\">Your name</label><input id=\"ds-name\" type=\"text\"></div><div class=\"ds-field\"><label for=\"ds-details\">Details</label><textarea id=\"ds-details\" rows=\"3\" placeholder=\"Dates, nationality, destination, or anything else that helps\"></textarea></div><div class=\"ds-band-actions\"><button class=\"ds-pill-invert\" type=\"button\">Send on WhatsApp</button><p class=\"ds-band-note\">This opens WhatsApp with your message ready to send.</p></div></form>",
+      "css": ".ds-band { display: grid; gap: 1.5rem; padding: 3rem 2rem; background: var(--color-burgundy, #640b2c); color: var(--color-paper, #ffffff); font-family: var(--font-sans, 'Wix Madefor Text', system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.65; } .ds-band-title { margin: 0; font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: clamp(1.75rem, 1.4rem + 1.1vw, 2.5rem); font-weight: 700; line-height: 1.15; } .ds-field { display: grid; gap: 0.375rem; } .ds-field > label { font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 0.875rem; font-weight: 500; color: var(--color-blush, #f4c9d4); } .ds-field input, .ds-field textarea { width: 100%; min-height: 3rem; border: 0; border-bottom: 1px solid rgb(255 255 255 / 0.5); border-radius: 0; background-color: transparent; color: var(--color-paper, #ffffff); font: inherit; padding-block: 0.625rem; transition: border-color 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)), box-shadow 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-field textarea { min-height: 5.5rem; resize: vertical; } .ds-field ::placeholder { color: rgb(255 255 255 / 0.66); } .ds-field input:hover, .ds-field textarea:hover { border-bottom-color: var(--color-paper, #ffffff); } .ds-field input:focus-visible, .ds-field textarea:focus-visible { outline: 0; border-bottom-color: var(--color-paper, #ffffff); box-shadow: 0 2px 0 0 var(--color-paper, #ffffff); } .ds-band-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2rem; } .ds-pill-invert { display: inline-flex; align-items: center; justify-content: center; min-height: 3.4375rem; padding-inline: 2.3125rem; border: 0; border-radius: 999px; background: var(--color-paper, #ffffff); color: var(--color-burgundy, #640b2c); font-family: var(--font-display, 'Wix Madefor Display', system-ui, sans-serif); font-size: 0.96875rem; font-weight: 600; line-height: 1; white-space: nowrap; cursor: pointer; transition: background-color 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)), transform 200ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-pill-invert:hover { background: var(--color-blush, #f4c9d4); } .ds-pill-invert:active { transform: scale(0.98); } .ds-pill-invert:focus-visible { outline: 2px solid var(--color-paper, #ffffff); outline-offset: 3px; } .ds-band-note { max-width: 38ch; margin: 0; font-size: 0.875rem; color: var(--color-blush, #f4c9d4); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Panorama",
+    "overview": "Every page opens on photographs of places and then gets out of the way. A full-width strip of famous destinations sits directly under a white navigation band; below it, on a flat oyster-grey ground, charcoal type states the errand plainly and lists every service on hairline rules. The register is that of a premium travel company: luxury through restraint, corporate and trustworthy, with nothing themed and nothing decorative.\n\nEverything that is not a photograph is type, a hairline or a burgundy mark. There are no cards, no icons other than one chevron, and no shadows on content. Sections alternate between oyster grey and white, and one burgundy band per page holds the enquiry form: the place to act. Density is generous, with wide gutters, tall section padding and columns that split five to seven.\n\nThe system rejects the single skyline hero over a row of icon cards, aircraft imagery of any kind, and themed concepts. Motion is one authored entrance on load (the photographs rise into the strip) plus short state transitions; nothing animates on scroll. English and Arabic are equal editions: every layout mirrors, and Arabic has its own faces and line heights.",
+    "keyCharacteristics": [
+      "Destination photographs lead; they are full-bleed, square-cornered and separated by thin white gaps.",
+      "A flat oyster-grey ground alternating with white bands, and exactly one burgundy band per page.",
+      "One type family in two cuts (Wix Madefor Display and Text), sentence case throughout, no uppercase labels.",
+      "Hairline rules instead of boxes: lists, tabs, questions and facts are all rows on 1px lines.",
+      "Two shapes only: square corners and full pills.",
+      "One icon: a 9 by 16 chevron that mirrors in right-to-left.",
+      "Light theme only; no dark mode is defined."
+    ],
+    "rules": [
+      {
+        "name": "The Burgundy Rule",
+        "body": "Burgundy marks the brand and the next action: wordmark, pills, chevrons, step numerals, checklist strokes, the selected or hovered state, the focus ring. It never colours a heading, a paragraph, a border or a decorative shape.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Band Rule",
+        "body": "One burgundy field per page, and it is always the enquiry band. No second drenched section, no burgundy footer, no burgundy navigation.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Grounds Rule",
+        "body": "Sections sit on oyster grey or on white, alternating. There are no tints, gradients or textures behind text. The only gradient in the system is the dark floor under a place name on a photograph.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "Nothing is set in uppercase and nothing is letter-spaced for effect. Labels are small and medium-weight, not shouted. The only tracking in the system is the slight tightening of the headline and the wordmark.",
+        "section": "typography"
+      },
+      {
+        "name": "The Three Weights Rule",
+        "body": "Display type uses 700 for headlines, section titles and numerals; 600 for titles, pills and the wordmark; 500 for labels, links and captions. Body text is 400. No italics, no light weights.",
+        "section": "typography"
+      },
+      {
+        "name": "The Arabic Edition Rule",
+        "body": "Arabic text asks for Alexandria and Noto Sans Arabic first, never takes letter-spacing (tracking breaks the joins), and gets more room: body line-height 1.9, display line-height 1.4, caption line-height 1.5. Phone numbers stay left-to-right inside Arabic text.",
+        "section": "typography"
+      },
+      {
+        "name": "The Full-Bleed Rule",
+        "body": "A row of photographs always spans the whole viewport width, from edge to edge, directly under the navigation band or between two sections. A single photograph inside a section sits in a column instead and keeps its square corners.",
+        "section": "layout"
+      },
+      {
+        "name": "The Uneven Split Rule",
+        "body": "Two columns are never equal halves. Use five to seven or seven to five with an 8% gap.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Rule",
+        "body": "No shadow on photographs, rows, pills, bands or text. If something needs to stand apart, change the ground or draw a hairline.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do open a page with photographs running edge to edge under the white band, or with the burgundy band when the page is about getting in touch.",
+      "Do keep photographs square-cornered, cropped to cover, and separated by 8px white gaps.",
+      "Do put a white place name at the bottom corner of a photograph, over the dark floor, whenever the photograph is named.",
+      "Do build lists as rows on 1px hairlines, with a hairline above each row and one closing the last.",
+      "Do alternate oyster grey and white between sections and end the page on the burgundy enquiry band.",
+      "Do split two columns five to seven or seven to five with an 8% gap.",
+      "Do use one burgundy pill per view and an underlined text link for the second action.",
+      "Do write layout with logical properties, mirror chevrons, and check every new surface in Arabic.",
+      "Do keep transitions on the expo ease (cubic-bezier(0.16, 1, 0.3, 1)): 200ms for colour, 300ms for chevrons, 500 to 700ms for the strip.",
+      "Do honour reduced motion; everything is visible without animation."
+    ],
+    "donts": [
+      "Don't add icons. The chevron is the only one, and the checklist stroke is the only other mark.",
+      "Don't build cards: no boxed, filled or four-sided-bordered containers around content.",
+      "Don't put shadows on content. The only shadow is under the mobile menu panel.",
+      "Don't round the corners of photographs, fields or bands, and don't use any radius between square and full pill.",
+      "Don't use burgundy for headings, body text, borders or section tints, and don't add a second burgundy band to a page.",
+      "Don't show aeroplanes or aircraft in any photograph, and don't adopt a themed concept such as boarding passes, departure boards or passport stamps.",
+      "Don't use a single skyline photograph as a hero, or a row of icon tiles for the services.",
+      "Don't set type in uppercase or add letter-spacing, and never track Arabic text.",
+      "Don't add scroll-triggered animation. The strip entrance on load is the only authored motion.",
+      "Don't add grain, texture or gradients to the ground; the oyster grey is flat.",
+      "Don't invent proof. No badges, counters, star ratings or logos of partners appear in this system."
+    ]
+  }
+}
