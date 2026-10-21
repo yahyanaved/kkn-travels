@@ -3,19 +3,19 @@ import type { Dictionary } from "./types";
 export const en: Dictionary = {
   meta: {
     siteTitle: "KKN Travels",
-    titleTemplate: "%s | KKN Travels Dubai",
-    homeTitle: "KKN Travels: Visa Services in Dubai for Schengen, UK, USA, Canada and Australia",
+    titleTemplate: "%s | KKN Travels",
+    homeTitle: "KKN Travels: Visa Services in Sharjah and Dubai for Schengen, UK, USA, Canada and Australia",
     homeDescription:
-      "Visa services in Dubai for any country: Schengen, UK, USA, Canada, Australia and more, plus Dubai visit and family visas. Early appointments, quick processing, flights, hotels and travel insurance.",
-    servicesTitle: "Visa, Flight, Hotel and Insurance Services in Dubai",
+      "Visa services in Sharjah and Dubai for any country: Schengen, UK, USA, Canada, Australia and more, plus Dubai visit and family visas. Early appointments, quick processing, flights, hotels and travel insurance.",
+    servicesTitle: "Visa, Flight, Hotel and Insurance Services in Sharjah and Dubai",
     servicesDescription:
-      "Everything the KKN Travels desk in Dubai handles: visas for travel abroad, UAE visas, flight tickets, hotel bookings and travel insurance, typing, holidays and Umrah.",
-    aboutTitle: "About KKN Travels, a Travel and Documents Desk in Dubai",
+      "Everything the KKN Travels desk in Sharjah handles: visas for travel abroad, UAE visas, flight tickets, hotel bookings and travel insurance, typing, holidays and Umrah.",
+    aboutTitle: "About KKN Travels, a Visa and Travel Desk in Sharjah",
     aboutDescription:
-      "KKN Travels is a walk-in travel and documents desk in Dubai. How we work, what we handle, and what we will never promise.",
-    contactTitle: "Contact KKN Travels in Dubai: WhatsApp, Phone and Office",
+      "KKN Travels is a walk-in visa and travel desk in Sharjah. How we work, what we handle, and what we will never promise.",
+    contactTitle: "Contact KKN Travels in Sharjah: WhatsApp, Phone and Office",
     contactDescription:
-      "Message KKN Travels on WhatsApp, call the office, or walk in. Opening hours, address and directions to our desk in Dubai.",
+      "Message KKN Travels on WhatsApp, call the office, or walk in. Opening hours, address and directions to our desk in Sharjah.",
     privacyTitle: "Privacy Notice",
     privacyDescription: "How KKN Travels handles the personal details and documents you share with us.",
     notFoundTitle: "Page not found",
@@ -36,7 +36,7 @@ export const en: Dictionary = {
   },
   announce: { text: "Dubai family visa now available.", cta: "See what you need" },
   hero: {
-    headline: "Visas for any country, sorted at one desk in Dubai.",
+    headline: "Visas for any country, sorted at one desk in the UAE.",
     lede: "Schengen, UK, USA, Canada, Australia and more, plus Dubai visit and family visas. Early appointments, quick processing, and the flight, hotel and insurance bookings your file needs.",
     call: "Call",
     stripLabel: "Where we can take you",
@@ -46,7 +46,6 @@ export const en: Dictionary = {
     istanbul: { name: "Istanbul", caption: "Flights on any airline", alt: "The Blue Mosque in Istanbul at dusk" },
     paris: { name: "Europe", caption: "Schengen visas", alt: "The Eiffel Tower in Paris at sunset" },
     maldives: { name: "Maldives", caption: "Holiday packages", alt: "Overwater villas on a turquoise lagoon in the Maldives" },
-    makkah: { name: "Makkah", caption: "Umrah trips", alt: "The Clock Tower above the Grand Mosque in Makkah at night" },
     london: { name: "London", caption: "UK visa help", alt: "Tower Bridge in London at blue hour" },
     "dubai-museum": { name: "Museum of the Future", caption: "Typing and applications", alt: "The Museum of the Future in Dubai in morning light" },
     "dubai-creek": { name: "Dubai Creek", caption: "Typing and applications", alt: "Abra boats on Dubai Creek in late-afternoon light" },
@@ -148,7 +147,7 @@ export const en: Dictionary = {
   },
   services: {
     heading: "Everything the desk handles",
-    intro: "Visas are the main work: for travel abroad and for Dubai. Flights, hotels, insurance, typing and trips sit alongside, so one errand does not turn into four.",
+    intro: "Visas are the main work: for travel abroad and for the UAE. Flights, hotels, insurance, typing and trips sit alongside, so one errand does not turn into four.",
     whoFor: "Usually for",
     stepsHeading: "How it goes",
     faqHeading: "Questions people ask",
@@ -158,9 +157,9 @@ export const en: Dictionary = {
     seeService: "See what is included",
   },
   about: {
-    heading: "A travel and documents desk in Dubai",
+    heading: "A visa and travel desk in Sharjah",
     intro: [
-      "KKN Travels is a walk-in desk in Dubai for visas and the paperwork around travel: visas for any country, Dubai visit and family visas, flights, hotels, insurance, typing and trips.",
+      "KKN Travels is a walk-in desk in Sharjah for visas and the paperwork around travel: visas for any country, Dubai visit and family visas, flights, hotels, insurance, typing and trips.",
       "We are a new business, so we will not show you a wall of awards or a counter of happy customers. What we can show you is how we work.",
     ],
     principlesHeading: "How we work",
@@ -198,7 +197,7 @@ export const en: Dictionary = {
     formHeading: "Send an enquiry",
     detailsHeading: "Office details",
     whatsapp: "WhatsApp",
-    phone: "Office phone",
+    phone: "Phone",
     mobile: "Mobile",
     email: "Email",
     address: "Address",
@@ -235,7 +234,7 @@ export const en: Dictionary = {
     ],
   },
   footer: {
-    tagline: "Visas for any country, flights, hotels and insurance, sorted at one desk in Dubai.",
+    tagline: "Visas for any country, flights, hotels and insurance, sorted at one desk in the UAE.",
     servicesHeading: "Services",
     companyHeading: "Company",
     contactHeading: "Contact",

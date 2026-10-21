@@ -1,6 +1,6 @@
 # KKN Travels
 
-Marketing website for KKN Travels, a visa and travel desk in Dubai. Visas lead: Schengen, UK, USA, Canada, Australia and other countries, plus Dubai visit and family visas. Flights, hotel bookings, travel insurance, typing, holidays and Umrah sit alongside. English and Arabic (right-to-left).
+Marketing website for KKN Travels, a visa and travel desk in Sharjah, UAE. Visas lead: Schengen, UK, USA, Canada, Australia and other countries, plus Dubai visit and family visas. Flights, hotel bookings, travel insurance, typing, holidays and Umrah sit alongside. English and Arabic (right-to-left).
 
 Built with Next.js 16 (App Router), TypeScript and Tailwind CSS v4. Every page is statically generated.
 
@@ -18,17 +18,22 @@ npm run build   # production build
 npm run lint    # eslint
 ```
 
-## Before launch
+## Business details
 
-1. **Replace the dummy business details** in `src/config/site.ts`: phone, mobile, WhatsApp number, email, address, map link, coordinates and opening hours.
-2. **Set the environment variables** (see `.env.example`):
-   - `NEXT_PUBLIC_SITE_URL`: the real domain, for example `https://www.kkntravels.com`.
-   - `NEXT_PUBLIC_ALLOW_INDEXING=true`: until this is set the site tells search engines not to index it, so the dummy details never reach search results.
-3. **Review the visa copy**: the list of countries, "early appointments", "quick processing", "Dubai family visa now available" and the visit visa for Pakistani nationals are stated as the owner asked. Edit the country list in `services.visas.en.ts` (and the Arabic file) to match what the desk really handles; change the top announcement in `announce` in `en.ts` and `ar.ts`.
-3. **Review the rest of the copy** in `src/content`. It makes a few promises about how the office works (a written price before payment, government fees shown separately, English and Arabic spoken). Keep only what is true.
-4. **Have a native speaker review the Arabic** in `src/content/ar.ts` and `src/content/services.ar.ts`.
-5. **Replace the Makkah photograph** (`public/images/destinations/makkah.jpg`) with a licensed photograph before the site goes public. It is a generated depiction of the Grand Mosque and the Kaaba, which is not acceptable to publish for this audience.
-6. **Other photographs** in `public/images/destinations` are generated placeholders too. Replace any of them with owned or licensed photography by swapping the file and keeping the name.
+Phone, WhatsApp, email and address live in `src/config/site.ts`. Two things there are still open:
+
+- **Opening hours** are not shown (the site says they are to be confirmed). Fill in `hours` and set `confirmed.hours` to `true`.
+- **Map coordinates** are left out of the search data. Add the office's latitude and longitude to `address.geo` and set `confirmed.coordinates` to `true`.
+
+## Settings
+
+See `.env.example`. `NEXT_PUBLIC_SITE_URL` defaults to `https://kkn-travels.com`; search engines may index the site unless `NEXT_PUBLIC_ALLOW_INDEXING` is `false` (use that on preview deployments).
+
+## Still to review
+
+- **Visa copy**: the country list, "early appointments", "quick processing", "Dubai family visa now available" and the visit visa for Pakistani nationals are stated as the owner asked. Edit the country list in `services.visas.en.ts` (and the Arabic file) to match what the desk really handles; the top announcement is `announce` in `en.ts` and `ar.ts`.
+- **Arabic**: a native speaker should review `src/content/ar.ts`, `services.ar.ts` and `services.visas.ar.ts`.
+- **Photographs** in `public/images/destinations` are generated placeholders. Replace any of them with owned or licensed photography by swapping the file and keeping the name.
 
 ## Where things live
 

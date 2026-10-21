@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { site } from "@/config/site";
 
-export const alt = "KKN Travels: visas for any country, sorted at one desk in Dubai";
+export const alt = "KKN Travels: visas for any country, sorted at one desk in the UAE";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -25,7 +25,7 @@ export default function OpengraphImage() {
         <div style={{ display: "flex", fontSize: 44, fontWeight: 700, color: "#640b2c" }}>{site.name}</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
           <div style={{ display: "flex", fontSize: 84, fontWeight: 700, lineHeight: 1.1, maxWidth: 940 }}>
-            Visas for any country, sorted at one desk in Dubai.
+            Visas for any country, sorted at one desk in the UAE.
           </div>
           <div style={{ display: "flex", fontSize: 32, color: "#5e6167" }}>
             Schengen, UK, USA, Canada, Australia, and Dubai visit and family visas

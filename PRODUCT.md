@@ -23,7 +23,7 @@ They usually arrive with one concrete errand and a deadline, often on a phone, a
 
 ## Product Purpose
 
-KKN Travels is a travel and documents desk in Dubai. The site exists to turn a search ("UAE visit visa", "flight ticket booking Dubai", "typing services Dubai") into an enquiry by WhatsApp, phone, form or walk-in. Success is a qualified enquiry that already names the service the person needs.
+KKN Travels is a visa and travel desk in Sharjah, UAE (Block B, B22-100, SRTI Park), serving customers across the UAE including Dubai. The site exists to turn a search ("UAE visit visa", "flight ticket booking Dubai", "typing services Dubai") into an enquiry by WhatsApp, phone, form or walk-in. Success is a qualified enquiry that already names the service the person needs.
 
 ## Positioning
 
@@ -40,7 +40,8 @@ Visa applications, passports, Emirates ID, airline tickets and boarding passes, 
 - Paused by the owner (2026-10-02): document attestation and translation. The copy is kept but hidden from the site.
 - Not offered (not selected by the owner): company formation and trade licensing.
 - Enquiries go to WhatsApp, phone and email. No online payment or booking engine.
-- Undecided: real phone, email, address and domain (dummy values in use); exact visa types and countries served; prices; opening hours; whether IATA accreditation applies.
+- Confirmed contact (2026-10-21): phone and WhatsApp +971 50 642 2967, email business@kkn-travels.com, office Block B, B22-100, SRTI Park, Sharjah. Domain kkn-travels.com.
+- Undecided: opening hours; map coordinates; prices; whether IATA accreditation applies.
 
 ## Brand Commitments
 

@@ -29,7 +29,6 @@ export const destinations: Record<DestinationId, Destination> = {
     frame: { scale: 1.167, origin: "50% 24%" },
   },
   maldives: { src: "/images/destinations/maldives.jpg", width: 1792, height: 2240, slug: "holidays-and-umrah" },
-  makkah: { src: "/images/destinations/makkah.jpg", width: 1792, height: 2240, slug: "holidays-and-umrah" },
   london: {
     src: "/images/destinations/london.jpg",
     width: 2336,

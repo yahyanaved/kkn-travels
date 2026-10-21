@@ -59,9 +59,8 @@ export function businessJsonLd(locale: Locale) {
       addressRegion: site.address.region,
       addressCountry: site.address.country,
     },
-    ...(site.confirmed.location
-      ? { geo: { "@type": "GeoCoordinates", ...site.address.geo }, hasMap: site.address.mapUrl }
-      : {}),
+    hasMap: site.address.mapUrl,
+    ...(site.confirmed.coordinates ? { geo: { "@type": "GeoCoordinates", ...site.address.geo } } : {}),
     areaServed: { "@type": "Country", name: "United Arab Emirates" },
     ...(site.confirmed.hours
       ? {

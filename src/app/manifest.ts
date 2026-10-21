@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: site.name,
     short_name: site.name,
-    description: "Visas, airline tickets and documents, sorted at one desk in Dubai.",
+    description: "Visas, airline tickets and documents, sorted at one desk in the UAE.",
     start_url: "/",
     display: "standalone",
     background_color: "#ebe7e2",

@@ -1,49 +1,43 @@
 /**
  * Business details used across the site, the footer, the enquiry form and
- * the structured data. Everything marked PLACEHOLDER is dummy data: replace
- * it before launch.
+ * the structured data. Opening hours are still to be confirmed.
  */
 export const site = {
   name: "KKN Travels",
   nameAr: "كي كي إن للسفريات",
 
-  /** PLACEHOLDER: set NEXT_PUBLIC_SITE_URL to the real domain in production. */
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://kkntravels.example").replace(/\/$/, ""),
+  /** The public address. Override with NEXT_PUBLIC_SITE_URL, for example on a preview deployment. */
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://kkn-travels.com").replace(/\/$/, ""),
+
+  /** Search engines may index the site unless NEXT_PUBLIC_ALLOW_INDEXING is set to "false". */
+  allowIndexing: process.env.NEXT_PUBLIC_ALLOW_INDEXING !== "false",
 
   /**
-   * Search engines are told not to index the site until this is true, so the
-   * dummy phone number and address below never end up in search results.
-   * Set NEXT_PUBLIC_ALLOW_INDEXING=true once the real details are in.
+   * Flip these to true once the values below are confirmed. Until then the
+   * site says the hours are to be confirmed, and hours and map coordinates
+   * stay out of the structured data.
    */
-  allowIndexing: process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true",
+  confirmed: { hours: false as boolean, coordinates: false as boolean },
 
-  /**
-   * Flip these to true once the real values are in below. Until then the
-   * site says the hours are to be confirmed and leaves hours and map
-   * coordinates out of the structured data.
-   */
-  confirmed: { hours: false as boolean, location: false as boolean },
-
-  /** PLACEHOLDER contact details. */
-  phone: { display: "+971 4 000 0000", href: "tel:+97140000000" },
-  mobile: { display: "+971 50 000 0000", href: "tel:+971500000000" },
+  /** One number for calls and WhatsApp. */
+  phone: { display: "+971 50 642 2967", href: "tel:+971506422967" },
+  mobile: { display: "+971 50 642 2967", href: "tel:+971506422967" },
   /** Digits only, international format, no plus sign. */
-  whatsapp: "971500000000",
-  email: "info@kkntravels.example",
+  whatsapp: "971506422967",
+  email: "business@kkn-travels.com",
 
-  /** PLACEHOLDER address. */
   address: {
-    en: { line1: "Office 000, Example Building", line2: "Dubai, United Arab Emirates" },
-    ar: { line1: "مكتب 000، مبنى المثال", line2: "دبي، الإمارات العربية المتحدة" },
-    locality: "Dubai",
-    region: "Dubai",
+    en: { line1: "Block B, B22-100, SRTI Park", line2: "Sharjah, United Arab Emirates" },
+    ar: { line1: "المبنى B، مكتب B22-100، مجمع الشارقة للبحوث والتكنولوجيا والابتكار", line2: "الشارقة، الإمارات العربية المتحدة" },
+    locality: "Sharjah",
+    region: "Sharjah",
     country: "AE",
-    /** PLACEHOLDER: link to the real Google Maps listing. */
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Dubai",
-    geo: { latitude: 25.2048, longitude: 55.2708 },
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Block%20B%2C%20SRTI%20Park%2C%20Sharjah",
+    /** Not confirmed yet: kept out of the structured data until confirmed.coordinates is true. */
+    geo: { latitude: 0, longitude: 0 },
   },
 
-  /** PLACEHOLDER opening hours. `schema` feeds the structured data. */
+  /** PLACEHOLDER opening hours, not shown until confirmed.hours is true. `schema` feeds the structured data. */
   hours: {
     en: [
       { days: "Monday to Saturday", time: "9:00 am to 8:00 pm" },

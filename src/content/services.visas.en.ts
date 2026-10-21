@@ -13,9 +13,9 @@ export const visaServicesEn: Service[] = [
     nav: "Visas abroad",
     name: "Visas for travel abroad",
     title: "Visas for Schengen, UK, USA, Canada, Australia and more",
-    metaTitle: "Visa Services in Dubai: Schengen, UK, USA, Canada and Australia Visas",
+    metaTitle: "Visa Services in Sharjah and Dubai: Schengen, UK, USA, Canada and Australia Visas",
     metaDescription:
-      "Visa help in Dubai for UAE residents: Schengen, UK, USA, Canada, Australia and more. Early appointments, quick filing, plus flight, hotel and insurance bookings.",
+      "Visa help in Sharjah and Dubai for UAE residents: Schengen, UK, USA, Canada, Australia and more. Early appointments, quick filing, plus flight, hotel and insurance bookings.",
     summary:
       "Schengen, UK, USA, Canada, Australia and other visas: forms, early appointments, document checks and supporting bookings.",
     whoFor: "UAE residents travelling abroad",
@@ -116,7 +116,7 @@ export const visaServicesEn: Service[] = [
     title: "Dubai visit visas, family visas and residence visas",
     metaTitle: "Dubai Visit Visa and Family Visa Services, UAE Visas for Pakistani Nationals",
     metaDescription:
-      "Dubai visit visas, family visas (now available), visit visas for Pakistani nationals, renewals, extensions and cancellations, handled at one desk in Dubai.",
+      "Dubai visit visas, family visas (now available), visit visas for Pakistani nationals, renewals, extensions and cancellations, handled at one desk in Sharjah.",
     summary: "Dubai visit visas, family visas, visit visas for Pakistani nationals, renewals, extensions and cancellations.",
     whoFor: "Residents sponsoring family, and visitors coming to the UAE",
     intro: [
@@ -211,9 +211,9 @@ export const visaServicesEn: Service[] = [
     nav: "Hotels and insurance",
     name: "Hotel bookings and travel insurance",
     title: "Hotel bookings, flight reservations and travel insurance",
-    metaTitle: "Hotel Booking and Travel Insurance for Visa Applications in Dubai",
+    metaTitle: "Hotel Booking and Travel Insurance for Visa Applications in Sharjah and Dubai",
     metaDescription:
-      "Hotel bookings, flight reservations and travel insurance for visa applications, arranged in Dubai to match your dates and the embassy's requirements.",
+      "Hotel bookings, flight reservations and travel insurance for visa applications, arranged in Sharjah to match your dates and the embassy's requirements.",
     summary: "Hotel bookings, flight reservations and travel insurance that match your visa application.",
     whoFor: "Anyone applying for a visa or planning a trip",
     intro: [

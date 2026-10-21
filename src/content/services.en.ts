@@ -15,9 +15,9 @@ export const servicesEn: Service[] = [
     nav: "Flights",
     name: "Flight tickets",
     title: "Airline tickets from Dubai and across the UAE",
-    metaTitle: "Flight Ticket Booking in Dubai: Airline Tickets and Group Fares",
+    metaTitle: "Flight Ticket Booking in Sharjah and Dubai: Airline Tickets and Group Fares",
     metaDescription:
-      "Book airline tickets in Dubai with a person who checks the fare rules for you: one-way, return and multi-city tickets, group bookings, date changes and reissues.",
+      "Book airline tickets in the UAE with a person who checks the fare rules for you: one-way, return and multi-city tickets, group bookings, date changes and reissues.",
     summary: "One-way, return and multi-city tickets, group bookings, date changes and reissues.",
     whoFor: "Anyone flying from or to the UAE",
     intro: [
@@ -157,10 +157,10 @@ export const servicesEn: Service[] = [
     short: "Government applications",
     nav: "Typing",
     name: "Typing services",
-    title: "Typing and application forms in Dubai",
-    metaTitle: "Typing Services in Dubai: Emirates ID, Medical and Visa Applications",
+    title: "Typing and application forms in Sharjah",
+    metaTitle: "Typing Services in Sharjah: Emirates ID, Medical and Visa Applications",
     metaDescription:
-      "Typing services in Dubai for Emirates ID, medical fitness and visa applications, plus letters and forms in Arabic and English, checked before they are submitted.",
+      "Typing services in Sharjah for Emirates ID, medical fitness and visa applications, plus letters and forms in Arabic and English, checked before they are submitted.",
     summary: "Emirates ID, medical and visa application typing, and letters in Arabic and English.",
     whoFor: "Residents and employers with government forms to file",
     intro: [
@@ -227,9 +227,9 @@ export const servicesEn: Service[] = [
     nav: "Holidays",
     name: "Holidays and Umrah",
     title: "Holiday packages, Umrah trips and hotel bookings",
-    metaTitle: "Holiday Packages and Umrah Trips from Dubai, Hotels and Travel Insurance",
+    metaTitle: "Holiday Packages and Umrah Trips from the UAE, Hotels and Travel Insurance",
     metaDescription:
-      "Holiday packages and Umrah trips from Dubai planned at one desk: flights, hotels, transfers, visas and travel insurance arranged together and explained clearly.",
+      "Holiday packages and Umrah trips from the UAE planned at one desk: flights, hotels, transfers, visas and travel insurance arranged together and explained clearly.",
     summary: "Holiday packages, Umrah trips, hotel bookings and travel insurance.",
     whoFor: "Families and groups planning a trip",
     intro: [

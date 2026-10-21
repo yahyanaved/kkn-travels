@@ -23,7 +23,7 @@ const companion: Record<ServiceSlug, DestinationId> = {
   "hotels-and-travel-insurance": "maldives",
   "document-attestation": "dubai",
   "typing-services": "dubai-creek",
-  "holidays-and-umrah": "makkah",
+  "holidays-and-umrah": "istanbul",
 };
 
 /** Which enquiry option each service page preselects (index into enquiry.needOptions). */

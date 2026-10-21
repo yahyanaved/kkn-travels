@@ -23,7 +23,6 @@ export const destinationIds = [
   "istanbul",
   "paris",
   "maldives",
-  "makkah",
   "london",
   "dubai-museum",
   "dubai-creek",

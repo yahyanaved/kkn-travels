@@ -42,11 +42,9 @@ export function OfficeDetails({ locale }: { locale: Locale }) {
             <br />
             {address.line2}
           </address>
-          {site.confirmed.location ? (
-            <a href={site.address.mapUrl} className="text-link mt-2 inline-block" target="_blank" rel="noopener">
-              {t.contact.directions}
-            </a>
-          ) : null}
+          <a href={site.address.mapUrl} className="text-link mt-2 inline-block" target="_blank" rel="noopener">
+            {t.contact.directions}
+          </a>
         </dd>
       </div>
       <div className="grid gap-1 sm:grid-cols-[9rem_1fr]">
