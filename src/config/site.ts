@@ -20,10 +20,10 @@ export const site = {
   confirmed: { hours: false as boolean, coordinates: false as boolean },
 
   /** One number for calls and WhatsApp. */
-  phone: { display: "+971 50 642 2967", href: "tel:+971506422967" },
-  mobile: { display: "+971 50 642 2967", href: "tel:+971506422967" },
+  phone: { display: "+971 54 314 5445", href: "tel:+971543145445" },
+  mobile: { display: "+971 54 314 5445", href: "tel:+971543145445" },
   /** Digits only, international format, no plus sign. */
-  whatsapp: "971506422967",
+  whatsapp: "971543145445",
   email: "business@kkn-travels.com",
 
   address: {

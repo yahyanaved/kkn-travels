@@ -40,7 +40,7 @@ Visa applications, passports, Emirates ID, airline tickets and boarding passes, 
 - Paused by the owner (2026-10-02): document attestation and translation. The copy is kept but hidden from the site.
 - Not offered (not selected by the owner): company formation and trade licensing.
 - Enquiries go to WhatsApp, phone and email. No online payment or booking engine.
-- Confirmed contact (2026-10-21): phone and WhatsApp +971 50 642 2967, email business@kkn-travels.com, office Block B, B22-100, SRTI Park, Sharjah. Domain kkn-travels.com.
+- Confirmed contact (2026-10-21): phone and WhatsApp +971 54 314 5445 (company number, changed 2026-10-21), email business@kkn-travels.com, office Block B, B22-100, SRTI Park, Sharjah. Domain kkn-travels.com.
 - Undecided: opening hours; map coordinates; prices; whether IATA accreditation applies.
 
 ## Brand Commitments
