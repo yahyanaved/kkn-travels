@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 import { Announcement } from "@/components/Announcement";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -56,6 +57,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
         </main>
         <Footer locale={locale} />
         <JsonLd data={[businessJsonLd(locale), websiteJsonLd(locale)]} />
+        <Analytics />
       </body>
     </html>
   );
